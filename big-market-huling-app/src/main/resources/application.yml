@@ -1,0 +1,5 @@
+spring:
+  config:
+    name: big-market-huling-app
+  profiles:
+    active: dev
