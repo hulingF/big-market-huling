@@ -11,19 +11,45 @@
  Target Server Version : 80031
  File Encoding         : 65001
 
- Date: 18/01/2025 17:58:05
+ Date: 18/01/2025 19:57:17
 */
 
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
 
 -- ----------------------------
+-- Table structure for award
+-- ----------------------------
+DROP TABLE IF EXISTS `award`;
+CREATE TABLE `award`  (
+  `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT COMMENT '自增ID',
+  `award_id` bigint NOT NULL COMMENT '抽奖奖品ID',
+  `award_key` varchar(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '奖品对接标识-对应发奖策略',
+  `award_config` varchar(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '奖品配置信息',
+  `award_desc` varchar(128) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '奖品内容描述',
+  `create_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  `update_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of award
+-- ----------------------------
+INSERT INTO `award` VALUES (1, 101, 'user_credit_random', '1,100', '用户积分【优先透彻规则范围，没有则走配置】', '2025-01-18 19:51:49', '2025-01-18 19:51:49');
+INSERT INTO `award` VALUES (2, 102, 'experience_card', '1', '1天体验卡', '2025-01-18 19:53:04', '2025-01-18 19:53:21');
+INSERT INTO `award` VALUES (3, 103, 'experience_card', '3', '3天体验卡', '2025-01-18 19:53:37', '2025-01-18 19:53:37');
+INSERT INTO `award` VALUES (4, 104, 'experience_card', '5', '5天体验卡', '2025-01-18 19:53:56', '2025-01-18 19:53:56');
+INSERT INTO `award` VALUES (5, 105, 'openai_model', 'GPT4o', 'OpenAI增加模型', '2025-01-18 19:54:24', '2025-01-18 19:56:37');
+INSERT INTO `award` VALUES (6, 106, 'openai_model', 'DELL', 'OpenAI增加模型', '2025-01-18 19:55:02', '2025-01-18 19:56:43');
+INSERT INTO `award` VALUES (7, 107, 'openai_model', 'GPT4o,DELL', 'OpenAI增加模型', '2025-01-18 19:56:17', '2025-01-18 19:56:49');
+
+-- ----------------------------
 -- Table structure for strategy
 -- ----------------------------
 DROP TABLE IF EXISTS `strategy`;
 CREATE TABLE `strategy`  (
-  `id` int NOT NULL AUTO_INCREMENT COMMENT '自增ID',
-  `strategy_id` int NOT NULL COMMENT '抽奖策略ID',
+  `id` bigint NOT NULL AUTO_INCREMENT COMMENT '自增ID',
+  `strategy_id` bigint NOT NULL COMMENT '抽奖策略ID',
   `strategy_desc` varchar(128) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '抽奖策略描述',
   `create_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
   `update_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
@@ -40,9 +66,9 @@ INSERT INTO `strategy` VALUES (1, 10001, '抽奖策略测试A', '2025-01-18 17:3
 -- ----------------------------
 DROP TABLE IF EXISTS `strategy_award`;
 CREATE TABLE `strategy_award`  (
-  `id` int UNSIGNED NOT NULL AUTO_INCREMENT COMMENT '自增ID',
-  `strategy_id` int NOT NULL COMMENT '抽奖策略ID',
-  `award_id` int NOT NULL COMMENT '抽奖奖品ID',
+  `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT COMMENT '自增ID',
+  `strategy_id` bigint NOT NULL COMMENT '抽奖策略ID',
+  `award_id` bigint NOT NULL COMMENT '抽奖奖品ID',
   `award_title` varchar(128) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '抽奖奖品标题',
   `award_subtitle` varchar(128) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '抽奖奖品副标题',
   `award_count` int NOT NULL COMMENT '奖品库存总量',
@@ -71,11 +97,11 @@ INSERT INTO `strategy_award` VALUES (7, 10001, 107, '增加全部模型', '抽�
 -- ----------------------------
 DROP TABLE IF EXISTS `strategy_rule`;
 CREATE TABLE `strategy_rule`  (
-  `id` int NOT NULL AUTO_INCREMENT COMMENT '自增ID',
-  `strategy_id` int NOT NULL COMMENT '抽奖策略ID',
-  `award_id` int NULL DEFAULT NULL COMMENT '抽奖奖品ID',
+  `id` bigint NOT NULL AUTO_INCREMENT COMMENT '自增ID',
+  `strategy_id` bigint NOT NULL COMMENT '抽奖策略ID',
+  `award_id` bigint NULL DEFAULT NULL COMMENT '抽奖奖品ID',
   `rule_desc` varchar(128) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '抽奖规则描述',
-  `rule_type` int NOT NULL COMMENT '抽奖规则类型：1-策略规则、2-奖品规则',
+  `rule_type` tinyint NOT NULL COMMENT '抽奖规则类型：1-策略规则、2-奖品规则',
   `rule_model` varchar(16) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '抽奖规则模型：rule_random-随机值计算、rule_lock-N次解锁...',
   `rule_value` varchar(64) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '抽奖规则物料',
   `create_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
