@@ -1,6 +1,7 @@
 package com.huling.test.domin;
 
 import com.huling.domain.strategy.service.IStrategyArmory;
+import com.huling.domain.strategy.service.IStrategyDispatch;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -16,6 +17,8 @@ public class StrategyArmoryTest {
 
     @Resource
     private IStrategyArmory strategyArmory;
+    @Resource
+    private IStrategyDispatch strategyDispatch;
 
     @Test
     public void test_assembleLotteryStrategy() {
@@ -25,12 +28,21 @@ public class StrategyArmoryTest {
 
     @Test
     public void test_getRandomAwardId() {
-        log.info("测试结果：{} - 奖品ID值", strategyArmory.getRandomAwardId(10001L));
-        log.info("测试结果：{} - 奖品ID值", strategyArmory.getRandomAwardId(10001L));
-        log.info("测试结果：{} - 奖品ID值", strategyArmory.getRandomAwardId(10001L));
-        log.info("测试结果：{} - 奖品ID值", strategyArmory.getRandomAwardId(10001L));
-        log.info("测试结果：{} - 奖品ID值", strategyArmory.getRandomAwardId(10001L));
-        log.info("测试结果：{} - 奖品ID值", strategyArmory.getRandomAwardId(10001L));
+        log.info("测试结果：{} - 奖品ID值", strategyDispatch.getRandomAwardId(10001L));
+        log.info("测试结果：{} - 奖品ID值", strategyDispatch.getRandomAwardId(10001L));
+        log.info("测试结果：{} - 奖品ID值", strategyDispatch.getRandomAwardId(10001L));
+        log.info("测试结果：{} - 奖品ID值", strategyDispatch.getRandomAwardId(10001L));
+        log.info("测试结果：{} - 奖品ID值", strategyDispatch.getRandomAwardId(10001L));
+        log.info("测试结果：{} - 奖品ID值", strategyDispatch.getRandomAwardId(10001L));
+    }
+
+    @Test
+    public void test_getRandomAwardIdForRuleWeight() {
+        log.info("测试结果：{} - 奖品ID值", strategyDispatch.getRandomAwardId(10001L, "6000"));
+        log.info("测试结果：{} - 奖品ID值", strategyDispatch.getRandomAwardId(10001L, "6000"));
+        log.info("测试结果：{} - 奖品ID值", strategyDispatch.getRandomAwardId(10001L, "6000"));
+        log.info("测试结果：{} - 奖品ID值", strategyDispatch.getRandomAwardId(10001L, "6000"));
+        log.info("测试结果：{} - 奖品ID值", strategyDispatch.getRandomAwardId(10001L, "6000"));
     }
 
 }
