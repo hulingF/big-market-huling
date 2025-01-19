@@ -1,4 +1,4 @@
-package com.huling.domain.strategy.service;
+package com.huling.domain.strategy.service.armory;
 
 import com.huling.domain.strategy.apapter.repository.IStrategyRepository;
 import com.huling.domain.strategy.model.entity.StrategyAwardEntity;

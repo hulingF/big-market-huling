@@ -1,4 +1,4 @@
-package com.huling.domain.strategy.service;
+package com.huling.domain.strategy.service.armory;
 
 public interface IStrategyDispatch {
 

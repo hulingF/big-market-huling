@@ -1,4 +1,4 @@
-package com.huling.domain.strategy.service;
+package com.huling.domain.strategy.service.armory;
 
 /**
  * 策略计算装配接口

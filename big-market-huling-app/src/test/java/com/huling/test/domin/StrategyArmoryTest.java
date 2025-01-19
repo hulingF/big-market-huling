@@ -1,7 +1,7 @@
 package com.huling.test.domin;
 
-import com.huling.domain.strategy.service.IStrategyArmory;
-import com.huling.domain.strategy.service.IStrategyDispatch;
+import com.huling.domain.strategy.service.armory.IStrategyArmory;
+import com.huling.domain.strategy.service.armory.IStrategyDispatch;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
