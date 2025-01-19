@@ -17,5 +17,10 @@
         <result column="update_time" property="updateTime"/>
     </resultMap>
 
+    <select id="queryStrategyAwardListByStrategyId" parameterType="java.lang.Long" resultMap="dataMap">
+        select strategy_id, award_id, award_count, award_count_surplus, award_rate
+        from strategy_award
+        where strategy_id = #{strategy_id}
+    </select>
 
 </mapper>
