@@ -4,6 +4,7 @@ import com.huling.domain.strategy.apapter.repository.IStrategyRepository;
 import com.huling.domain.strategy.model.entity.StrategyAwardEntity;
 import com.huling.domain.strategy.model.entity.StrategyEntity;
 import com.huling.domain.strategy.model.entity.StrategyRuleEntity;
+import com.huling.domain.strategy.model.vo.StrategyAwardRuleModelVO;
 import com.huling.infrastructure.dao.IStrategyAwardDao;
 import com.huling.infrastructure.dao.IStrategyDao;
 import com.huling.infrastructure.dao.IStrategyRuleDao;
@@ -115,5 +116,14 @@ public class StrategyRepository implements IStrategyRepository {
         strategyRule.setAwardId(awardId);
         strategyRule.setRuleModel(ruleModel);
         return strategyRuleDao.queryStrategyRuleValue(strategyRule);
+    }
+
+    @Override
+    public StrategyAwardRuleModelVO queryStrategyAwardRuleModelVO(Long strategyId, Long awardId) {
+        StrategyAward strategyAward = new StrategyAward();
+        strategyAward.setStrategyId(strategyId);
+        strategyAward.setAwardId(awardId);
+        String ruleModels = strategyAwardDao.queryStrategyAwardRuleModels(strategyAward);
+        return StrategyAwardRuleModelVO.builder().ruleModels(ruleModels).build();
     }
 }
