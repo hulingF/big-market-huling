@@ -2,7 +2,7 @@ package com.huling.domain.strategy.service.rule.filter.factory;
 
 import com.huling.domain.strategy.model.entity.RuleActionEntity;
 import com.huling.domain.strategy.service.annotation.LogicStrategy;
-import com.huling.domain.strategy.service.rule.ILogicFilter;
+import com.huling.domain.strategy.service.rule.filter.ILogicFilter;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import org.springframework.core.annotation.AnnotationUtils;
