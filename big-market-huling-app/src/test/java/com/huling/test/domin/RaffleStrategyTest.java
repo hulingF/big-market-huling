@@ -4,9 +4,9 @@ import com.alibaba.fastjson.JSON;
 import com.huling.domain.strategy.model.entity.RaffleAwardEntity;
 import com.huling.domain.strategy.model.entity.RaffleFactorEntity;
 import com.huling.domain.strategy.service.armory.IStrategyArmory;
-import com.huling.domain.strategy.service.raffle.IRaffleStrategy;
-import com.huling.domain.strategy.service.rule.impl.RuleLockLogicFilter;
-import com.huling.domain.strategy.service.rule.impl.RuleWeightLogicFilter;
+import com.huling.domain.strategy.service.IRaffleStrategy;
+import com.huling.domain.strategy.service.rule.chain.impl.RuleWeightLogicChain;
+import com.huling.domain.strategy.service.rule.filter.impl.RuleLockLogicFilter;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Before;
 import org.junit.Test;
@@ -29,7 +29,7 @@ public class RaffleStrategyTest {
     private IRaffleStrategy raffleStrategy;
 
     @Resource
-    private RuleWeightLogicFilter ruleWeightLogicFilter;
+    private RuleWeightLogicChain ruleWeightLogicChain;
 
     @Resource
     private RuleLockLogicFilter ruleLockLogicFilter;
@@ -37,7 +37,7 @@ public class RaffleStrategyTest {
     @Before
     public void setUp() {
         strategyArmory.assembleLotteryStrategy(10001L);
-        ReflectionTestUtils.setField(ruleWeightLogicFilter, "userScore", 4000L);
+        ReflectionTestUtils.setField(ruleWeightLogicChain, "userScore", 4000L);
         ReflectionTestUtils.setField(ruleLockLogicFilter, "userRaffleCount", 0L);
     }
     @Test

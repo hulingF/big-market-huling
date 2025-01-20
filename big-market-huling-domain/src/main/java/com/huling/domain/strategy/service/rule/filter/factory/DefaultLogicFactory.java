@@ -1,4 +1,4 @@
-package com.huling.domain.strategy.service.rule.factory;
+package com.huling.domain.strategy.service.rule.filter.factory;
 
 import com.huling.domain.strategy.model.entity.RuleActionEntity;
 import com.huling.domain.strategy.service.annotation.LogicStrategy;

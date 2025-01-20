@@ -1,6 +1,6 @@
 package com.huling.domain.strategy.model.vo;
 
-import com.huling.domain.strategy.service.rule.factory.DefaultLogicFactory;
+import com.huling.domain.strategy.service.rule.filter.factory.DefaultLogicFactory;
 import com.huling.types.common.Constants;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

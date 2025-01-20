@@ -1,4 +1,4 @@
-package com.huling.domain.strategy.service.raffle;
+package com.huling.domain.strategy.service;
 
 import com.huling.domain.strategy.model.entity.RaffleAwardEntity;
 import com.huling.domain.strategy.model.entity.RaffleFactorEntity;
