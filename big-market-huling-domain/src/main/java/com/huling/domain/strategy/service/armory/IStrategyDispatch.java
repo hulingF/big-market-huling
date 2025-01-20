@@ -11,4 +11,6 @@ public interface IStrategyDispatch {
 
     Long getRandomAwardId(Long strategyId, String ruleWeightValue);
 
+    Boolean subtractionAwardStock(Long strategyId, Long awardId);
+
 }

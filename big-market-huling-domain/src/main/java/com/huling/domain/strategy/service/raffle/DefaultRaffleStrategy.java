@@ -3,6 +3,7 @@ package com.huling.domain.strategy.service.raffle;
 import com.huling.domain.strategy.apapter.repository.IStrategyRepository;
 import com.huling.domain.strategy.model.vo.RuleTreeVO;
 import com.huling.domain.strategy.model.vo.StrategyAwardRuleModelVO;
+import com.huling.domain.strategy.model.vo.StrategyAwardStockKeyVO;
 import com.huling.domain.strategy.service.AbstractRaffleStrategy;
 import com.huling.domain.strategy.service.rule.chain.ILogicChain;
 import com.huling.domain.strategy.service.rule.chain.factory.DefaultChainFactory;
@@ -49,5 +50,15 @@ public class DefaultRaffleStrategy extends AbstractRaffleStrategy {
         // 执行规则树引擎
         IDecisionTreeEngine treeEngine = defaultTreeFactory.openLogicTree(ruleTreeVO);
         return treeEngine.process(userId, strategyId, awardId);
+    }
+
+    @Override
+    public StrategyAwardStockKeyVO takeQueueValue() throws InterruptedException {
+        return repository.takeQueueValue();
+    }
+
+    @Override
+    public void updateStrategyAwardStock(Long strategyId, Long awardId) {
+        repository.updateStrategyAwardStock(strategyId, awardId);
     }
 }

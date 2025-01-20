@@ -5,6 +5,7 @@ import com.huling.domain.strategy.model.entity.StrategyEntity;
 import com.huling.domain.strategy.model.entity.StrategyRuleEntity;
 import com.huling.domain.strategy.model.vo.RuleTreeVO;
 import com.huling.domain.strategy.model.vo.StrategyAwardRuleModelVO;
+import com.huling.domain.strategy.model.vo.StrategyAwardStockKeyVO;
 
 import java.util.List;
 import java.util.Map;
@@ -33,4 +34,14 @@ public interface IStrategyRepository {
     StrategyAwardRuleModelVO queryStrategyAwardRuleModelVO(Long strategyId, Long awardId);
 
     RuleTreeVO queryRuleTreeVOByTreeId(String treeId);
+
+    void cacheStrategyAwardCount(String cacheKey, Integer awardCount);
+
+    Boolean subtractionAwardStock(String cacheKey);
+
+    void awardStockConsumeSendQueue(StrategyAwardStockKeyVO strategyAwardStockKeyVO);
+
+    StrategyAwardStockKeyVO takeQueueValue();
+
+    void updateStrategyAwardStock(Long strategyId, Long awardId);
 }

@@ -29,30 +29,34 @@ public class DecisionTreeEngine implements IDecisionTreeEngine {
         String currentNode = ruleTreeVO.getTreeRootRuleNode();
         Map<String, RuleTreeNodeVO> treeNodeMap = ruleTreeVO.getTreeNodeMap();
         // 2.决策树执行
-        DefaultTreeFactory.StrategyAwardVO strategyAwardData = null;
+        DefaultTreeFactory.StrategyAwardVO strategyAwardVO = null;
         while (currentNode != null) {
             RuleTreeNodeVO ruleTreeNode = treeNodeMap.get(currentNode);
             // 获取决策树节点
             ILogicTreeNode logicTreeNode = logicTreeNodeGroup.get(ruleTreeNode.getRuleKey());
             // 决策树节点计算
-            DefaultTreeFactory.TreeActionEntity logicEntity = logicTreeNode.logic(userId, strategyId, awardId);
+            DefaultTreeFactory.TreeActionEntity logicEntity = logicTreeNode.logic(userId, strategyId, awardId, ruleTreeNode.getRuleValue());
             RuleLogicCheckTypeVO ruleLogicCheckType = logicEntity.getRuleLogicCheckType();
-            strategyAwardData = logicEntity.getStrategyAwardData();
+            strategyAwardVO = logicEntity.getStrategyAwardVO();
             log.info("决策树引擎【{}】treeId:{} node:{} code:{}", ruleTreeVO.getTreeName(), ruleTreeVO.getTreeId(), currentNode, ruleLogicCheckType.getCode());
             // 获取下一节点
             currentNode = nextNode(ruleLogicCheckType.getCode(), ruleTreeNode.getTreeNodeLineVOList());
         }
-        return strategyAwardData;
+        return strategyAwardVO;
     }
 
     private String nextNode(String matterValue, List<RuleTreeNodeLineVO> treeNodeLineVOList) {
+        // 到达决策树叶子节点如rule_luck_award，返回null
         if (null == treeNodeLineVOList || treeNodeLineVOList.isEmpty()) return null;
+        // 遍历决策树节点的所有连线，寻找符合的连线
         for (RuleTreeNodeLineVO nodeLine : treeNodeLineVOList) {
             if (decisionLogic(matterValue, nodeLine)) {
                 return nodeLine.getRuleNodeTo();
             }
         }
-        throw new RuntimeException("决策树引擎，nextNode 计算失败，未找到可执行节点！");
+        // 未找到符合的连线，决策树执行结束，返回null
+        //throw new RuntimeException("决策树引擎，nextNode 计算失败，未找到可执行节点！");
+        return null;
     }
 
     private boolean decisionLogic(String matterValue, RuleTreeNodeLineVO nodeLine) {

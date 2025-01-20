@@ -16,6 +16,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.util.ReflectionTestUtils;
 
 import javax.annotation.Resource;
+import java.util.concurrent.CountDownLatch;
 
 @Slf4j
 @RunWith(SpringRunner.class)
@@ -36,11 +37,12 @@ public class RaffleStrategyTest {
 
     @Before
     public void setUp() {
-        strategyArmory.assembleLotteryStrategy(10001L);
+        // strategyArmory.assembleLotteryStrategy(10001L);
         strategyArmory.assembleLotteryStrategy(10002L);
-        ReflectionTestUtils.setField(ruleWeightLogicChain, "userScore", 7000L);
-        //ReflectionTestUtils.setField(ruleLockLogicFilter, "userRaffleCount", 0L);
+        ReflectionTestUtils.setField(ruleWeightLogicChain, "userScore", 4000L);
+        ReflectionTestUtils.setField(ruleLockLogicTreeNode, "userRaffleCount", 10L);
     }
+
     @Test
     public void test_performRaffle_weight() {
         RaffleFactorEntity raffleFactorEntity = RaffleFactorEntity.builder()
@@ -64,7 +66,7 @@ public class RaffleStrategyTest {
     }
 
     @Test
-    public void test_performRaffle_rule_lock(){
+    public void test_performRaffle_rule_lock() throws InterruptedException {
         RaffleFactorEntity raffleFactorEntity = RaffleFactorEntity.builder()
                 .userId("user")
                 .strategyId(10002L)
@@ -72,6 +74,7 @@ public class RaffleStrategyTest {
         RaffleAwardEntity raffleAwardEntity = raffleStrategy.performRaffle(raffleFactorEntity);
         log.info("请求参数：{}", JSON.toJSONString(raffleFactorEntity));
         log.info("测试结果：{}", JSON.toJSONString(raffleAwardEntity));
+        new CountDownLatch(1).await();
     }
 
 

@@ -32,8 +32,8 @@ public class DefaultTreeFactory {
     @AllArgsConstructor
     @NoArgsConstructor
     public static class TreeActionEntity {
-        private RuleLogicCheckTypeVO ruleLogicCheckType;
-        private StrategyAwardVO strategyAwardData;
+        private RuleLogicCheckTypeVO ruleLogicCheckType;//决定决策树的走向
+        private StrategyAwardVO strategyAwardVO;//决策节点计算结果
     }
 
     @Data

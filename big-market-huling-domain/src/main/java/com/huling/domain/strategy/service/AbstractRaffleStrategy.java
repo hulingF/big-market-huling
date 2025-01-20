@@ -11,7 +11,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 
 @Slf4j
-public abstract class AbstractRaffleStrategy implements IRaffleStrategy {
+public abstract class AbstractRaffleStrategy implements IRaffleStrategy, IRaffleStock {
 
     protected IStrategyRepository repository;
     // 抽奖的责任链 -> 从抽奖的规则中，解耦出前置规则为责任链处理
