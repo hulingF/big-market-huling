@@ -2,6 +2,7 @@ package com.huling.domain.strategy.service.rule.chain.impl;
 
 import com.huling.domain.strategy.apapter.repository.IStrategyRepository;
 import com.huling.domain.strategy.service.rule.chain.AbstractLogicChain;
+import com.huling.domain.strategy.service.rule.chain.factory.DefaultChainFactory;
 import com.huling.types.common.Constants;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
@@ -17,11 +18,11 @@ public class RuleBlackListLogicChain extends AbstractLogicChain {
 
     @Override
     protected String ruleModel() {
-        return "rule_blacklist";
+        return DefaultChainFactory.LogicModel.RULE_BLACKLIST.getCode();
     }
 
     @Override
-    public Long logic(String userId, Long strategyId) {
+    public DefaultChainFactory.StrategyAwardVO logic(String userId, Long strategyId) {
         log.info("抽奖责任链-黑名单开始 userId: {} strategyId: {} ruleModel: {}", userId, strategyId, ruleModel());
         // 1.查询黑名单规则配置 100:user1,user2,user3
         String ruleValue = repository.queryStrategyRuleValue(strategyId, ruleModel());
@@ -32,7 +33,10 @@ public class RuleBlackListLogicChain extends AbstractLogicChain {
         for (String userBlackId : userBlackIds) {
             if (userId.equals(userBlackId)) {
                 log.info("抽奖责任链-黑名单接管 userId: {} strategyId: {} ruleModel: {} awardId: {}", userId, strategyId, ruleModel(), awardId);
-                return awardId;
+                return DefaultChainFactory.StrategyAwardVO.builder()
+                        .awardId(awardId)
+                        .logicModel(ruleModel())
+                        .build();
             }
         }
         // 3.过滤其他责任链

@@ -3,6 +3,7 @@ package com.huling.domain.strategy.service.rule.chain.impl;
 import com.huling.domain.strategy.apapter.repository.IStrategyRepository;
 import com.huling.domain.strategy.service.armory.IStrategyDispatch;
 import com.huling.domain.strategy.service.rule.chain.AbstractLogicChain;
+import com.huling.domain.strategy.service.rule.chain.factory.DefaultChainFactory;
 import com.huling.types.common.Constants;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
@@ -26,11 +27,11 @@ public class RuleWeightLogicChain extends AbstractLogicChain {
 
     @Override
     protected String ruleModel() {
-        return "rule_weight";
+        return DefaultChainFactory.LogicModel.RULE_WEIGHT.getCode();
     }
 
     @Override
-    public Long logic(String userId, Long strategyId) {
+    public DefaultChainFactory.StrategyAwardVO logic(String userId, Long strategyId) {
         log.info("抽奖责任链-权重开始 userId: {} strategyId: {} ruleModel: {}", userId, strategyId, ruleModel());
         // 1.查询权重规则配置 4000:102,103,104,105 5000:102,103,104,105,106,107 6000:102,103,104,105,106,107,108,109
         String ruleValue = repository.queryStrategyRuleValue(strategyId, ruleModel());
@@ -44,7 +45,10 @@ public class RuleWeightLogicChain extends AbstractLogicChain {
         if (ruleWeightKey.isPresent()) {
             Long awardId = strategyDispatch.getRandomAwardId(strategyId, String.valueOf(ruleWeightKey.get()));
             log.info("抽奖责任链-权重接管 userId: {} strategyId: {} ruleModel: {} awardId: {}", userId, strategyId, ruleModel(), awardId);
-            return awardId;
+            return DefaultChainFactory.StrategyAwardVO.builder()
+                    .awardId(awardId)
+                    .logicModel(ruleModel())
+                    .build();
         }
         // 5.过滤其他责任链
         log.info("抽奖责任链-权重放行 userId: {} strategyId: {} ruleModel: {}", userId, strategyId, ruleModel());

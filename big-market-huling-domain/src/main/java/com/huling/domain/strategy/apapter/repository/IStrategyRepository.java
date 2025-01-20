@@ -3,6 +3,7 @@ package com.huling.domain.strategy.apapter.repository;
 import com.huling.domain.strategy.model.entity.StrategyAwardEntity;
 import com.huling.domain.strategy.model.entity.StrategyEntity;
 import com.huling.domain.strategy.model.entity.StrategyRuleEntity;
+import com.huling.domain.strategy.model.vo.RuleTreeVO;
 import com.huling.domain.strategy.model.vo.StrategyAwardRuleModelVO;
 
 import java.util.List;
@@ -31,4 +32,5 @@ public interface IStrategyRepository {
 
     StrategyAwardRuleModelVO queryStrategyAwardRuleModelVO(Long strategyId, Long awardId);
 
+    RuleTreeVO queryRuleTreeVOByTreeId(String treeId);
 }

@@ -35,8 +35,8 @@ public class LogicChainTest {
     @Test
     public void test_LogicChain_rule_blacklist() {
         ILogicChain logicChain = defaultChainFactory.openLogicChain(10001L);
-        Long awardId = logicChain.logic("user1", 10001L);
-        log.info("测试结果：{}", awardId);
+        DefaultChainFactory.StrategyAwardVO strategyAwardVO = logicChain.logic("user1", 10001L);
+        log.info("测试结果：{}", strategyAwardVO.getAwardId());
     }
 
     @Test
@@ -44,15 +44,15 @@ public class LogicChainTest {
         // 通过反射 mock 规则中的值
         ReflectionTestUtils.setField(ruleWeightLogicChain, "userScore", 7000L);
         ILogicChain logicChain = defaultChainFactory.openLogicChain(10001L);
-        Long awardId = logicChain.logic("user0", 10001L);
-        log.info("测试结果：{}", awardId);
+        DefaultChainFactory.StrategyAwardVO strategyAwardVO = logicChain.logic("user0", 10001L);
+        log.info("测试结果：{}", strategyAwardVO.getAwardId());
     }
 
     @Test
     public void test_LogicChain_rule_default() {
         ILogicChain logicChain = defaultChainFactory.openLogicChain(10001L);
-        Long awardId = logicChain.logic("user0", 10001L);
-        log.info("测试结果：{}", awardId);
+        DefaultChainFactory.StrategyAwardVO strategyAwardVO = logicChain.logic("user0", 10001L);
+        log.info("测试结果：{}", strategyAwardVO.getAwardId());
     }
 
 }
