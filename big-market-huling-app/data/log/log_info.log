@@ -1,0 +1,811 @@
+25-01-20.10:37:22.280 [main            ] INFO  LogicChainTest         - Starting LogicChainTest using Java 17.0.2 on BestHul with PID 24020 (started by 34404 in D:\Learning\bugstack\big-market-huling\big-market-huling-app)
+25-01-20.10:37:22.281 [main            ] INFO  LogicChainTest         - The following 1 profile is active: "dev"
+25-01-20.10:37:22.888 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-01-20.10:37:22.894 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-01-20.10:37:22.926 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+25-01-20.10:37:23.723 [main            ] INFO  Version                - Redisson 3.23.4
+25-01-20.10:37:24.039 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-01-20.10:37:24.057 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-01-20.10:37:26.002 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-01-20.10:37:26.092 [main            ] INFO  LogicChainTest         - Started LogicChainTest in 4.116 seconds (JVM running for 4.635)
+25-01-20.10:37:26.636 [main            ] INFO  StrategyArmoryDispatch - 奖品101 概率范围100
+25-01-20.10:37:26.637 [main            ] INFO  StrategyArmoryDispatch - 奖品102 概率范围1000
+25-01-20.10:37:26.637 [main            ] INFO  StrategyArmoryDispatch - 奖品103 概率范围500
+25-01-20.10:37:26.637 [main            ] INFO  StrategyArmoryDispatch - 奖品104 概率范围300
+25-01-20.10:37:26.637 [main            ] INFO  StrategyArmoryDispatch - 奖品105 概率范围8000
+25-01-20.10:37:26.637 [main            ] INFO  StrategyArmoryDispatch - 奖品106 概率范围90
+25-01-20.10:37:26.637 [main            ] INFO  StrategyArmoryDispatch - 奖品107 概率范围10
+25-01-20.10:37:26.828 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-01-20.10:37:27.105 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-01-20.10:37:27.132 [main            ] INFO  StrategyArmoryDispatch - 奖品102 概率范围1000
+25-01-20.10:37:27.132 [main            ] INFO  StrategyArmoryDispatch - 奖品103 概率范围500
+25-01-20.10:37:27.132 [main            ] INFO  StrategyArmoryDispatch - 奖品104 概率范围300
+25-01-20.10:37:27.132 [main            ] INFO  StrategyArmoryDispatch - 奖品105 概率范围8000
+25-01-20.10:37:27.133 [main            ] INFO  StrategyArmoryDispatch - 奖品106 概率范围90
+25-01-20.10:37:27.133 [main            ] INFO  StrategyArmoryDispatch - 奖品107 概率范围10
+25-01-20.10:37:27.174 [main            ] INFO  LogicChainTest         - 测试结果：true
+25-01-20.10:37:27.177 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: user1 strategyId: 10001 ruleModel: rule_weight
+25-01-20.10:37:27.294 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重放行 userId: user1 strategyId: 10001 ruleModel: rule_weight
+25-01-20.10:37:27.294 [main            ] INFO  RuleBlackListLogicChain - 抽奖责任链-黑名单开始 userId: user1 strategyId: 10001 ruleModel: rule_blacklist
+25-01-20.10:37:27.296 [main            ] INFO  RuleBlackListLogicChain - 抽奖责任链-黑名单接管 userId: user1 strategyId: 10001 ruleModel: rule_blacklist awardId: 100
+25-01-20.10:37:27.296 [main            ] INFO  LogicChainTest         - 测试结果：100
+25-01-20.10:37:27.322 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-01-20.10:37:27.331 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-01-20.10:38:29.457 [main            ] INFO  LogicChainTest         - Starting LogicChainTest using Java 17.0.2 on BestHul with PID 32352 (started by 34404 in D:\Learning\bugstack\big-market-huling\big-market-huling-app)
+25-01-20.10:38:29.458 [main            ] INFO  LogicChainTest         - The following 1 profile is active: "dev"
+25-01-20.10:38:30.035 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-01-20.10:38:30.037 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-01-20.10:38:30.068 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+25-01-20.10:38:30.780 [main            ] INFO  Version                - Redisson 3.23.4
+25-01-20.10:38:31.046 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-01-20.10:38:31.065 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-01-20.10:38:33.033 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-01-20.10:38:33.095 [main            ] INFO  LogicChainTest         - Started LogicChainTest in 3.969 seconds (JVM running for 4.688)
+25-01-20.10:38:33.576 [main            ] INFO  StrategyArmoryDispatch - 奖品101 概率范围100
+25-01-20.10:38:33.576 [main            ] INFO  StrategyArmoryDispatch - 奖品102 概率范围1000
+25-01-20.10:38:33.577 [main            ] INFO  StrategyArmoryDispatch - 奖品103 概率范围500
+25-01-20.10:38:33.577 [main            ] INFO  StrategyArmoryDispatch - 奖品104 概率范围300
+25-01-20.10:38:33.577 [main            ] INFO  StrategyArmoryDispatch - 奖品105 概率范围8000
+25-01-20.10:38:33.577 [main            ] INFO  StrategyArmoryDispatch - 奖品106 概率范围90
+25-01-20.10:38:33.577 [main            ] INFO  StrategyArmoryDispatch - 奖品107 概率范围10
+25-01-20.10:38:33.714 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-01-20.10:38:33.976 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-01-20.10:38:34.010 [main            ] INFO  StrategyArmoryDispatch - 奖品102 概率范围1000
+25-01-20.10:38:34.010 [main            ] INFO  StrategyArmoryDispatch - 奖品103 概率范围500
+25-01-20.10:38:34.010 [main            ] INFO  StrategyArmoryDispatch - 奖品104 概率范围300
+25-01-20.10:38:34.010 [main            ] INFO  StrategyArmoryDispatch - 奖品105 概率范围8000
+25-01-20.10:38:34.011 [main            ] INFO  StrategyArmoryDispatch - 奖品106 概率范围90
+25-01-20.10:38:34.011 [main            ] INFO  StrategyArmoryDispatch - 奖品107 概率范围10
+25-01-20.10:38:34.111 [main            ] INFO  LogicChainTest         - 测试结果：true
+25-01-20.10:38:34.123 [main            ] INFO  RuleBlackListLogicChain - 抽奖责任链-黑名单开始 userId: user1 strategyId: 10001 ruleModel: rule_blacklist
+25-01-20.10:38:34.237 [main            ] INFO  RuleBlackListLogicChain - 抽奖责任链-黑名单接管 userId: user1 strategyId: 10001 ruleModel: rule_blacklist awardId: 100
+25-01-20.10:38:34.237 [main            ] INFO  LogicChainTest         - 测试结果：100
+25-01-20.10:38:34.260 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-01-20.10:38:34.270 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-01-20.10:38:50.476 [main            ] INFO  LogicChainTest         - Starting LogicChainTest using Java 17.0.2 on BestHul with PID 15352 (started by 34404 in D:\Learning\bugstack\big-market-huling\big-market-huling-app)
+25-01-20.10:38:50.477 [main            ] INFO  LogicChainTest         - The following 1 profile is active: "dev"
+25-01-20.10:38:51.065 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-01-20.10:38:51.070 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-01-20.10:38:51.096 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+25-01-20.10:38:51.814 [main            ] INFO  Version                - Redisson 3.23.4
+25-01-20.10:38:52.116 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-01-20.10:38:52.135 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-01-20.10:38:54.123 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-01-20.10:38:54.179 [main            ] INFO  LogicChainTest         - Started LogicChainTest in 4.007 seconds (JVM running for 4.544)
+25-01-20.10:38:54.626 [main            ] INFO  StrategyArmoryDispatch - 奖品101 概率范围100
+25-01-20.10:38:54.627 [main            ] INFO  StrategyArmoryDispatch - 奖品102 概率范围1000
+25-01-20.10:38:54.627 [main            ] INFO  StrategyArmoryDispatch - 奖品103 概率范围500
+25-01-20.10:38:54.627 [main            ] INFO  StrategyArmoryDispatch - 奖品104 概率范围300
+25-01-20.10:38:54.627 [main            ] INFO  StrategyArmoryDispatch - 奖品105 概率范围8000
+25-01-20.10:38:54.627 [main            ] INFO  StrategyArmoryDispatch - 奖品106 概率范围90
+25-01-20.10:38:54.627 [main            ] INFO  StrategyArmoryDispatch - 奖品107 概率范围10
+25-01-20.10:38:54.822 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-01-20.10:38:55.056 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-01-20.10:38:55.085 [main            ] INFO  StrategyArmoryDispatch - 奖品102 概率范围1000
+25-01-20.10:38:55.086 [main            ] INFO  StrategyArmoryDispatch - 奖品103 概率范围500
+25-01-20.10:38:55.086 [main            ] INFO  StrategyArmoryDispatch - 奖品104 概率范围300
+25-01-20.10:38:55.086 [main            ] INFO  StrategyArmoryDispatch - 奖品105 概率范围8000
+25-01-20.10:38:55.086 [main            ] INFO  StrategyArmoryDispatch - 奖品106 概率范围90
+25-01-20.10:38:55.086 [main            ] INFO  StrategyArmoryDispatch - 奖品107 概率范围10
+25-01-20.10:38:55.131 [main            ] INFO  LogicChainTest         - 测试结果：true
+25-01-20.10:38:55.141 [main            ] INFO  RuleBlackListLogicChain - 抽奖责任链-黑名单开始 userId: user0 strategyId: 10001 ruleModel: rule_blacklist
+25-01-20.10:38:55.268 [main            ] INFO  RuleBlackListLogicChain - 抽奖责任链-黑名单放行 userId: user0 strategyId: 10001 ruleModel: rule_blacklist
+25-01-20.10:38:55.268 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: user0 strategyId: 10001 ruleModel: rule_weight
+25-01-20.10:38:55.277 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: user0 strategyId: 10001 ruleModel: rule_weight awardId: 105
+25-01-20.10:38:55.278 [main            ] INFO  LogicChainTest         - 测试结果：105
+25-01-20.10:38:55.308 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-01-20.10:38:55.321 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-01-20.10:39:19.355 [main            ] INFO  LogicChainTest         - Starting LogicChainTest using Java 17.0.2 on BestHul with PID 10836 (started by 34404 in D:\Learning\bugstack\big-market-huling\big-market-huling-app)
+25-01-20.10:39:19.356 [main            ] INFO  LogicChainTest         - The following 1 profile is active: "dev"
+25-01-20.10:39:19.972 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-01-20.10:39:19.976 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-01-20.10:39:20.011 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+25-01-20.10:39:20.744 [main            ] INFO  Version                - Redisson 3.23.4
+25-01-20.10:39:21.035 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-01-20.10:39:21.054 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-01-20.10:39:23.243 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-01-20.10:39:23.324 [main            ] INFO  LogicChainTest         - Started LogicChainTest in 4.299 seconds (JVM running for 4.83)
+25-01-20.10:39:23.919 [main            ] INFO  StrategyArmoryDispatch - 奖品101 概率范围100
+25-01-20.10:39:23.920 [main            ] INFO  StrategyArmoryDispatch - 奖品102 概率范围1000
+25-01-20.10:39:23.920 [main            ] INFO  StrategyArmoryDispatch - 奖品103 概率范围500
+25-01-20.10:39:23.920 [main            ] INFO  StrategyArmoryDispatch - 奖品104 概率范围300
+25-01-20.10:39:23.920 [main            ] INFO  StrategyArmoryDispatch - 奖品105 概率范围8000
+25-01-20.10:39:23.920 [main            ] INFO  StrategyArmoryDispatch - 奖品106 概率范围90
+25-01-20.10:39:23.920 [main            ] INFO  StrategyArmoryDispatch - 奖品107 概率范围10
+25-01-20.10:39:24.130 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-01-20.10:39:24.352 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-01-20.10:39:24.376 [main            ] INFO  StrategyArmoryDispatch - 奖品102 概率范围1000
+25-01-20.10:39:24.376 [main            ] INFO  StrategyArmoryDispatch - 奖品103 概率范围500
+25-01-20.10:39:24.376 [main            ] INFO  StrategyArmoryDispatch - 奖品104 概率范围300
+25-01-20.10:39:24.376 [main            ] INFO  StrategyArmoryDispatch - 奖品105 概率范围8000
+25-01-20.10:39:24.376 [main            ] INFO  StrategyArmoryDispatch - 奖品106 概率范围90
+25-01-20.10:39:24.377 [main            ] INFO  StrategyArmoryDispatch - 奖品107 概率范围10
+25-01-20.10:39:24.450 [main            ] INFO  LogicChainTest         - 测试结果：true
+25-01-20.10:39:24.453 [main            ] INFO  RuleBlackListLogicChain - 抽奖责任链-黑名单开始 userId: user0 strategyId: 10001 ruleModel: rule_blacklist
+25-01-20.10:39:24.569 [main            ] INFO  RuleBlackListLogicChain - 抽奖责任链-黑名单放行 userId: user0 strategyId: 10001 ruleModel: rule_blacklist
+25-01-20.10:39:24.569 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: user0 strategyId: 10001 ruleModel: rule_weight
+25-01-20.10:39:24.573 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重放行 userId: user0 strategyId: 10001 ruleModel: rule_weight
+25-01-20.10:39:24.576 [main            ] INFO  DefaultLogicChain      - 抽奖责任链-默认处理 userId: user0 strategyId: 10001 ruleModel: default awardId: 105
+25-01-20.10:39:24.577 [main            ] INFO  LogicChainTest         - 测试结果：105
+25-01-20.10:39:24.602 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-01-20.10:39:24.619 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-01-20.13:32:29.649 [main            ] INFO  LogicTreeTest          - Starting LogicTreeTest using Java 17.0.2 on BestHul with PID 9352 (started by 34404 in D:\Learning\bugstack\big-market-huling\big-market-huling-app)
+25-01-20.13:32:29.649 [main            ] INFO  LogicTreeTest          - The following 1 profile is active: "dev"
+25-01-20.13:32:30.305 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-01-20.13:32:30.311 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-01-20.13:32:30.337 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+25-01-20.13:32:31.057 [main            ] INFO  Version                - Redisson 3.23.4
+25-01-20.13:32:31.335 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-01-20.13:32:31.356 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-01-20.13:32:33.387 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-01-20.13:32:33.447 [main            ] INFO  LogicTreeTest          - Started LogicTreeTest in 4.189 seconds (JVM running for 4.837)
+25-01-20.13:32:33.863 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【决策树规则；增加dall-e-3画图模型】treeId:100000001 node:rule_lock code:0000
+25-01-20.13:32:33.864 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【决策树规则；增加dall-e-3画图模型】treeId:100000001 node:rule_stock code:0001
+25-01-20.13:32:33.864 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【决策树规则；增加dall-e-3画图模型】treeId:100000001 node:rule_luck_award code:0001
+25-01-20.13:32:33.952 [main            ] INFO  LogicTreeTest          - 测试结果：{"awardConfig":"1,100","awardId":101}
+25-01-20.18:59:30.575 [main            ] INFO  StrategyRepositoryTest - Starting StrategyRepositoryTest using Java 17.0.2 on BestHul with PID 37072 (started by 34404 in D:\Learning\bugstack\big-market-huling\big-market-huling-app)
+25-01-20.18:59:30.576 [main            ] INFO  StrategyRepositoryTest - The following 1 profile is active: "dev"
+25-01-20.18:59:31.328 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-01-20.18:59:31.331 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-01-20.18:59:31.374 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 0 Redis repository interfaces.
+25-01-20.18:59:32.147 [main            ] INFO  Version                - Redisson 3.23.4
+25-01-20.18:59:32.413 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-01-20.18:59:32.430 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-01-20.18:59:34.185 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-01-20.18:59:34.254 [main            ] INFO  StrategyRepositoryTest - Started StrategyRepositoryTest in 4.055 seconds (JVM running for 4.632)
+25-01-20.18:59:34.671 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-01-20.18:59:34.886 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-01-20.18:59:34.930 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-01-20.18:59:34.934 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-01-20.19:08:50.131 [main            ] INFO  StrategyRepositoryTest - Starting StrategyRepositoryTest using Java 17.0.2 on BestHul with PID 34056 (started by 34404 in D:\Learning\bugstack\big-market-huling\big-market-huling-app)
+25-01-20.19:08:50.132 [main            ] INFO  StrategyRepositoryTest - The following 1 profile is active: "dev"
+25-01-20.19:08:50.740 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-01-20.19:08:50.743 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-01-20.19:08:50.777 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+25-01-20.19:08:51.542 [main            ] INFO  Version                - Redisson 3.23.4
+25-01-20.19:08:51.848 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-01-20.19:08:51.870 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-01-20.19:08:54.135 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-01-20.19:08:54.207 [main            ] INFO  StrategyRepositoryTest - Started StrategyRepositoryTest in 4.43 seconds (JVM running for 5.125)
+25-01-20.19:08:54.681 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-01-20.19:08:54.908 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-01-20.19:08:55.125 [main            ] INFO  StrategyRepositoryTest - 测试结果:{"treeDesc":"规则树","treeId":"tree_lock","treeName":"规则树","treeNodeMap":{"rule_lock":{"ruleDesc":"限定用户已完成N次抽奖后解锁","ruleKey":"rule_lock","ruleValue":"1","treeId":"tree_lock","treeNodeLineVOList":[{"ruleLimitType":"EQUAL","ruleLimitValue":"ALLOW","ruleNodeFrom":"rule_lock","ruleNodeTo":"rule_stock","treeId":"tree_lock"},{"ruleLimitType":"EQUAL","ruleLimitValue":"TAKE_OVER","ruleNodeFrom":"rule_lock","ruleNodeTo":"rule_luck_award","treeId":"tree_lock"}]},"rule_stock":{"ruleDesc":"库存扣减规则","ruleKey":"rule_stock","treeId":"tree_lock","treeNodeLineVOList":[{"ruleLimitType":"EQUAL","ruleLimitValue":"TAKE_OVER","ruleNodeFrom":"rule_stock","ruleNodeTo":"rule_luck_award","treeId":"tree_lock"}]},"rule_luck_award":{"ruleDesc":"兜底奖品随机积分","ruleKey":"rule_luck_award","ruleValue":"1,100","treeId":"tree_lock"}},"treeRootRuleNode":"rule_lock"}
+25-01-20.19:08:55.180 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-01-20.19:08:55.190 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-01-20.19:56:06.637 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.2 on BestHul with PID 9352 (started by 34404 in D:\Learning\bugstack\big-market-huling\big-market-huling-app)
+25-01-20.19:56:06.638 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-01-20.19:56:07.354 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-01-20.19:56:07.356 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-01-20.19:56:07.393 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+25-01-20.19:56:08.199 [main            ] INFO  Version                - Redisson 3.23.4
+25-01-20.19:56:08.459 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-01-20.19:56:08.475 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-01-20.19:56:10.534 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-01-20.19:56:10.601 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 4.331 seconds (JVM running for 4.887)
+25-01-20.19:56:11.062 [main            ] INFO  StrategyArmoryDispatch - 奖品101 概率范围100
+25-01-20.19:56:11.063 [main            ] INFO  StrategyArmoryDispatch - 奖品102 概率范围1000
+25-01-20.19:56:11.063 [main            ] INFO  StrategyArmoryDispatch - 奖品103 概率范围500
+25-01-20.19:56:11.063 [main            ] INFO  StrategyArmoryDispatch - 奖品104 概率范围300
+25-01-20.19:56:11.063 [main            ] INFO  StrategyArmoryDispatch - 奖品105 概率范围8000
+25-01-20.19:56:11.063 [main            ] INFO  StrategyArmoryDispatch - 奖品106 概率范围90
+25-01-20.19:56:11.063 [main            ] INFO  StrategyArmoryDispatch - 奖品107 概率范围10
+25-01-20.19:56:11.232 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-01-20.19:56:11.444 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-01-20.19:56:11.469 [main            ] INFO  StrategyArmoryDispatch - 奖品102 概率范围1000
+25-01-20.19:56:11.469 [main            ] INFO  StrategyArmoryDispatch - 奖品103 概率范围500
+25-01-20.19:56:11.469 [main            ] INFO  StrategyArmoryDispatch - 奖品104 概率范围300
+25-01-20.19:56:11.469 [main            ] INFO  StrategyArmoryDispatch - 奖品105 概率范围8000
+25-01-20.19:56:11.469 [main            ] INFO  StrategyArmoryDispatch - 奖品106 概率范围90
+25-01-20.19:56:11.470 [main            ] INFO  StrategyArmoryDispatch - 奖品107 概率范围10
+25-01-20.19:56:11.556 [main            ] INFO  StrategyArmoryDispatch - 奖品101 概率范围8000
+25-01-20.19:56:11.556 [main            ] INFO  StrategyArmoryDispatch - 奖品102 概率范围1000
+25-01-20.19:56:11.556 [main            ] INFO  StrategyArmoryDispatch - 奖品103 概率范围500
+25-01-20.19:56:11.556 [main            ] INFO  StrategyArmoryDispatch - 奖品104 概率范围300
+25-01-20.19:56:11.557 [main            ] INFO  StrategyArmoryDispatch - 奖品105 概率范围100
+25-01-20.19:56:11.557 [main            ] INFO  StrategyArmoryDispatch - 奖品106 概率范围90
+25-01-20.19:56:11.557 [main            ] INFO  StrategyArmoryDispatch - 奖品107 概率范围10
+25-01-20.19:56:11.686 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-01-20.19:56:11.702 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-01-20.20:01:28.881 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.2 on BestHul with PID 34556 (started by 34404 in D:\Learning\bugstack\big-market-huling\big-market-huling-app)
+25-01-20.20:01:28.882 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-01-20.20:01:29.509 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-01-20.20:01:29.512 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-01-20.20:01:29.541 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+25-01-20.20:01:30.253 [main            ] INFO  Version                - Redisson 3.23.4
+25-01-20.20:01:30.533 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-01-20.20:01:30.548 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-01-20.20:01:32.390 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-01-20.20:01:32.455 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 3.896 seconds (JVM running for 4.566)
+25-01-20.20:01:32.978 [main            ] INFO  StrategyArmoryDispatch - 奖品101 概率范围100
+25-01-20.20:01:32.978 [main            ] INFO  StrategyArmoryDispatch - 奖品102 概率范围1000
+25-01-20.20:01:32.978 [main            ] INFO  StrategyArmoryDispatch - 奖品103 概率范围500
+25-01-20.20:01:32.978 [main            ] INFO  StrategyArmoryDispatch - 奖品104 概率范围300
+25-01-20.20:01:32.978 [main            ] INFO  StrategyArmoryDispatch - 奖品105 概率范围8000
+25-01-20.20:01:32.979 [main            ] INFO  StrategyArmoryDispatch - 奖品106 概率范围90
+25-01-20.20:01:32.979 [main            ] INFO  StrategyArmoryDispatch - 奖品107 概率范围10
+25-01-20.20:01:33.193 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-01-20.20:01:33.433 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-01-20.20:01:33.462 [main            ] INFO  StrategyArmoryDispatch - 奖品102 概率范围1000
+25-01-20.20:01:33.462 [main            ] INFO  StrategyArmoryDispatch - 奖品103 概率范围500
+25-01-20.20:01:33.462 [main            ] INFO  StrategyArmoryDispatch - 奖品104 概率范围300
+25-01-20.20:01:33.462 [main            ] INFO  StrategyArmoryDispatch - 奖品105 概率范围8000
+25-01-20.20:01:33.462 [main            ] INFO  StrategyArmoryDispatch - 奖品106 概率范围90
+25-01-20.20:01:33.463 [main            ] INFO  StrategyArmoryDispatch - 奖品107 概率范围10
+25-01-20.20:01:33.571 [main            ] INFO  StrategyArmoryDispatch - 奖品101 概率范围8000
+25-01-20.20:01:33.571 [main            ] INFO  StrategyArmoryDispatch - 奖品102 概率范围1000
+25-01-20.20:01:33.571 [main            ] INFO  StrategyArmoryDispatch - 奖品103 概率范围500
+25-01-20.20:01:33.571 [main            ] INFO  StrategyArmoryDispatch - 奖品104 概率范围300
+25-01-20.20:01:33.571 [main            ] INFO  StrategyArmoryDispatch - 奖品105 概率范围100
+25-01-20.20:01:33.572 [main            ] INFO  StrategyArmoryDispatch - 奖品106 概率范围90
+25-01-20.20:01:33.572 [main            ] INFO  StrategyArmoryDispatch - 奖品107 概率范围10
+25-01-20.20:01:33.704 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-01-20.20:01:33.717 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-01-20.20:02:27.872 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.2 on BestHul with PID 33888 (started by 34404 in D:\Learning\bugstack\big-market-huling\big-market-huling-app)
+25-01-20.20:02:27.874 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-01-20.20:02:28.660 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-01-20.20:02:28.663 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-01-20.20:02:28.694 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+25-01-20.20:02:29.609 [main            ] INFO  Version                - Redisson 3.23.4
+25-01-20.20:02:29.934 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-01-20.20:02:29.953 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-01-20.20:02:32.715 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-01-20.20:02:32.790 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 5.337 seconds (JVM running for 6.161)
+25-01-20.20:02:33.277 [main            ] INFO  StrategyArmoryDispatch - 奖品101 概率范围100
+25-01-20.20:02:33.278 [main            ] INFO  StrategyArmoryDispatch - 奖品102 概率范围1000
+25-01-20.20:02:33.278 [main            ] INFO  StrategyArmoryDispatch - 奖品103 概率范围500
+25-01-20.20:02:33.278 [main            ] INFO  StrategyArmoryDispatch - 奖品104 概率范围300
+25-01-20.20:02:33.278 [main            ] INFO  StrategyArmoryDispatch - 奖品105 概率范围8000
+25-01-20.20:02:33.279 [main            ] INFO  StrategyArmoryDispatch - 奖品106 概率范围90
+25-01-20.20:02:33.279 [main            ] INFO  StrategyArmoryDispatch - 奖品107 概率范围10
+25-01-20.20:03:02.977 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-01-20.20:03:09.321 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.2 on BestHul with PID 25584 (started by 34404 in D:\Learning\bugstack\big-market-huling\big-market-huling-app)
+25-01-20.20:03:09.322 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-01-20.20:03:10.040 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-01-20.20:03:10.042 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-01-20.20:03:10.075 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+25-01-20.20:03:10.803 [main            ] INFO  Version                - Redisson 3.23.4
+25-01-20.20:03:11.059 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-01-20.20:03:11.075 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-01-20.20:03:12.951 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-01-20.20:03:13.009 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 4.055 seconds (JVM running for 4.779)
+25-01-20.20:03:13.452 [main            ] INFO  StrategyArmoryDispatch - 奖品101 概率范围100
+25-01-20.20:03:13.453 [main            ] INFO  StrategyArmoryDispatch - 奖品102 概率范围1000
+25-01-20.20:03:13.453 [main            ] INFO  StrategyArmoryDispatch - 奖品103 概率范围500
+25-01-20.20:03:13.453 [main            ] INFO  StrategyArmoryDispatch - 奖品104 概率范围300
+25-01-20.20:03:13.453 [main            ] INFO  StrategyArmoryDispatch - 奖品105 概率范围8000
+25-01-20.20:03:13.453 [main            ] INFO  StrategyArmoryDispatch - 奖品106 概率范围90
+25-01-20.20:03:13.453 [main            ] INFO  StrategyArmoryDispatch - 奖品107 概率范围10
+25-01-20.20:03:13.611 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-01-20.20:03:13.843 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-01-20.20:03:13.867 [main            ] INFO  StrategyArmoryDispatch - 奖品102 概率范围1000
+25-01-20.20:03:13.868 [main            ] INFO  StrategyArmoryDispatch - 奖品103 概率范围500
+25-01-20.20:03:13.868 [main            ] INFO  StrategyArmoryDispatch - 奖品104 概率范围300
+25-01-20.20:03:13.868 [main            ] INFO  StrategyArmoryDispatch - 奖品105 概率范围8000
+25-01-20.20:03:13.868 [main            ] INFO  StrategyArmoryDispatch - 奖品106 概率范围90
+25-01-20.20:03:13.868 [main            ] INFO  StrategyArmoryDispatch - 奖品107 概率范围10
+25-01-20.20:03:13.909 [main            ] INFO  StrategyArmoryDispatch - 奖品101 概率范围8000
+25-01-20.20:03:13.909 [main            ] INFO  StrategyArmoryDispatch - 奖品102 概率范围1000
+25-01-20.20:03:13.910 [main            ] INFO  StrategyArmoryDispatch - 奖品103 概率范围500
+25-01-20.20:03:13.910 [main            ] INFO  StrategyArmoryDispatch - 奖品104 概率范围300
+25-01-20.20:03:13.910 [main            ] INFO  StrategyArmoryDispatch - 奖品105 概率范围100
+25-01-20.20:03:13.910 [main            ] INFO  StrategyArmoryDispatch - 奖品106 概率范围90
+25-01-20.20:03:13.910 [main            ] INFO  StrategyArmoryDispatch - 奖品107 概率范围10
+25-01-20.20:03:13.989 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-01-20.20:03:13.998 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-01-20.20:05:45.892 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.2 on BestHul with PID 36044 (started by 34404 in D:\Learning\bugstack\big-market-huling\big-market-huling-app)
+25-01-20.20:05:45.893 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-01-20.20:05:46.528 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-01-20.20:05:46.530 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-01-20.20:05:46.559 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+25-01-20.20:05:47.401 [main            ] INFO  Version                - Redisson 3.23.4
+25-01-20.20:05:47.670 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-01-20.20:05:47.686 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-01-20.20:05:50.876 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-01-20.20:05:50.972 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 5.402 seconds (JVM running for 6.132)
+25-01-20.20:05:51.663 [main            ] INFO  StrategyArmoryDispatch - 奖品101 概率范围100
+25-01-20.20:05:51.663 [main            ] INFO  StrategyArmoryDispatch - 奖品102 概率范围1000
+25-01-20.20:05:51.664 [main            ] INFO  StrategyArmoryDispatch - 奖品103 概率范围500
+25-01-20.20:05:51.664 [main            ] INFO  StrategyArmoryDispatch - 奖品104 概率范围300
+25-01-20.20:05:51.664 [main            ] INFO  StrategyArmoryDispatch - 奖品105 概率范围8000
+25-01-20.20:05:51.664 [main            ] INFO  StrategyArmoryDispatch - 奖品106 概率范围90
+25-01-20.20:05:51.665 [main            ] INFO  StrategyArmoryDispatch - 奖品107 概率范围10
+25-01-20.20:06:14.615 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-01-20.20:06:15.388 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-01-20.20:07:15.688 [main            ] INFO  StrategyArmoryDispatch - 奖品102 概率范围1000
+25-01-20.20:07:15.689 [main            ] INFO  StrategyArmoryDispatch - 奖品103 概率范围500
+25-01-20.20:07:15.689 [main            ] INFO  StrategyArmoryDispatch - 奖品104 概率范围300
+25-01-20.20:07:15.690 [main            ] INFO  StrategyArmoryDispatch - 奖品105 概率范围8000
+25-01-20.20:07:15.692 [main            ] INFO  StrategyArmoryDispatch - 奖品106 概率范围90
+25-01-20.20:07:15.692 [main            ] INFO  StrategyArmoryDispatch - 奖品107 概率范围10
+25-01-20.20:07:17.221 [main            ] INFO  StrategyArmoryDispatch - 奖品101 概率范围8000
+25-01-20.20:07:17.222 [main            ] INFO  StrategyArmoryDispatch - 奖品102 概率范围1000
+25-01-20.20:07:17.223 [main            ] INFO  StrategyArmoryDispatch - 奖品103 概率范围500
+25-01-20.20:07:17.223 [main            ] INFO  StrategyArmoryDispatch - 奖品104 概率范围300
+25-01-20.20:07:17.223 [main            ] INFO  StrategyArmoryDispatch - 奖品105 概率范围100
+25-01-20.20:07:17.223 [main            ] INFO  StrategyArmoryDispatch - 奖品106 概率范围90
+25-01-20.20:07:17.224 [main            ] INFO  StrategyArmoryDispatch - 奖品107 概率范围10
+25-01-20.20:07:26.167 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-01-20.20:07:26.174 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-01-20.20:08:44.494 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.2 on BestHul with PID 33248 (started by 34404 in D:\Learning\bugstack\big-market-huling\big-market-huling-app)
+25-01-20.20:08:44.495 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-01-20.20:08:45.185 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-01-20.20:08:45.189 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-01-20.20:08:45.222 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+25-01-20.20:08:46.073 [main            ] INFO  Version                - Redisson 3.23.4
+25-01-20.20:08:46.345 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-01-20.20:08:46.361 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-01-20.20:08:49.432 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-01-20.20:08:49.511 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 5.333 seconds (JVM running for 5.952)
+25-01-20.20:08:50.045 [main            ] INFO  StrategyArmoryDispatch - 奖品101 概率范围100
+25-01-20.20:08:50.046 [main            ] INFO  StrategyArmoryDispatch - 奖品102 概率范围1000
+25-01-20.20:08:50.046 [main            ] INFO  StrategyArmoryDispatch - 奖品103 概率范围500
+25-01-20.20:08:50.046 [main            ] INFO  StrategyArmoryDispatch - 奖品104 概率范围300
+25-01-20.20:08:50.046 [main            ] INFO  StrategyArmoryDispatch - 奖品105 概率范围8000
+25-01-20.20:08:50.046 [main            ] INFO  StrategyArmoryDispatch - 奖品106 概率范围90
+25-01-20.20:08:50.046 [main            ] INFO  StrategyArmoryDispatch - 奖品107 概率范围10
+25-01-20.20:08:56.334 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-01-20.20:08:56.517 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-01-20.20:08:58.764 [main            ] INFO  StrategyArmoryDispatch - 奖品102 概率范围1000
+25-01-20.20:08:58.764 [main            ] INFO  StrategyArmoryDispatch - 奖品103 概率范围500
+25-01-20.20:08:58.764 [main            ] INFO  StrategyArmoryDispatch - 奖品104 概率范围300
+25-01-20.20:08:58.764 [main            ] INFO  StrategyArmoryDispatch - 奖品105 概率范围8000
+25-01-20.20:08:58.764 [main            ] INFO  StrategyArmoryDispatch - 奖品106 概率范围90
+25-01-20.20:08:58.764 [main            ] INFO  StrategyArmoryDispatch - 奖品107 概率范围10
+25-01-20.20:08:58.842 [main            ] INFO  StrategyArmoryDispatch - 奖品101 概率范围8000
+25-01-20.20:08:58.842 [main            ] INFO  StrategyArmoryDispatch - 奖品102 概率范围1000
+25-01-20.20:08:58.842 [main            ] INFO  StrategyArmoryDispatch - 奖品103 概率范围500
+25-01-20.20:08:58.842 [main            ] INFO  StrategyArmoryDispatch - 奖品104 概率范围300
+25-01-20.20:08:58.842 [main            ] INFO  StrategyArmoryDispatch - 奖品105 概率范围100
+25-01-20.20:08:58.842 [main            ] INFO  StrategyArmoryDispatch - 奖品106 概率范围90
+25-01-20.20:08:58.842 [main            ] INFO  StrategyArmoryDispatch - 奖品107 概率范围10
+25-01-20.20:08:58.925 [main            ] INFO  StrategyArmoryDispatch - 奖品102 概率范围1000
+25-01-20.20:08:58.926 [main            ] INFO  StrategyArmoryDispatch - 奖品103 概率范围500
+25-01-20.20:08:58.926 [main            ] INFO  StrategyArmoryDispatch - 奖品104 概率范围300
+25-01-20.20:08:58.926 [main            ] INFO  StrategyArmoryDispatch - 奖品105 概率范围100
+25-01-20.20:08:58.926 [main            ] INFO  StrategyArmoryDispatch - 奖品106 概率范围90
+25-01-20.20:08:58.926 [main            ] INFO  StrategyArmoryDispatch - 奖品107 概率范围10
+25-01-20.20:08:58.944 [main            ] INFO  RuleBlackListLogicChain - 抽奖责任链-黑名单开始 userId: user strategyId: 10002 ruleModel: rule_blacklist
+25-01-20.20:08:59.020 [main            ] INFO  RuleBlackListLogicChain - 抽奖责任链-黑名单放行 userId: user strategyId: 10002 ruleModel: rule_blacklist
+25-01-20.20:08:59.021 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: user strategyId: 10002 ruleModel: rule_weight
+25-01-20.20:08:59.023 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重放行 userId: user strategyId: 10002 ruleModel: rule_weight
+25-01-20.20:08:59.026 [main            ] INFO  DefaultLogicChain      - 抽奖责任链-默认处理 userId: user strategyId: 10002 ruleModel: rule_default awardId: 101
+25-01-20.20:08:59.027 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 user 10002 101 rule_default
+25-01-20.20:08:59.058 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-01-20.20:08:59.059 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-01-20.20:08:59.061 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_luck_award code:0001
+25-01-20.20:08:59.061 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 user 10002 101 1,100
+25-01-20.20:08:59.285 [main            ] INFO  RaffleStrategyTest     - 请求参数：{"strategyId":10002,"userId":"user"}
+25-01-20.20:08:59.288 [main            ] INFO  RaffleStrategyTest     - 测试结果：{"awardId":101,"strategyId":10002}
+25-01-20.20:08:59.303 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-01-20.20:08:59.316 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-01-20.20:12:36.084 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.2 on BestHul with PID 32348 (started by 34404 in D:\Learning\bugstack\big-market-huling\big-market-huling-app)
+25-01-20.20:12:36.085 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-01-20.20:12:36.732 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-01-20.20:12:36.737 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-01-20.20:12:36.767 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+25-01-20.20:12:37.539 [main            ] INFO  Version                - Redisson 3.23.4
+25-01-20.20:12:37.813 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-01-20.20:12:37.830 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-01-20.20:12:39.762 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-01-20.20:12:39.861 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 4.074 seconds (JVM running for 4.614)
+25-01-20.20:12:40.418 [main            ] INFO  StrategyArmoryDispatch - 奖品101 概率范围100
+25-01-20.20:12:40.418 [main            ] INFO  StrategyArmoryDispatch - 奖品102 概率范围1000
+25-01-20.20:12:40.418 [main            ] INFO  StrategyArmoryDispatch - 奖品103 概率范围500
+25-01-20.20:12:40.419 [main            ] INFO  StrategyArmoryDispatch - 奖品104 概率范围300
+25-01-20.20:12:40.419 [main            ] INFO  StrategyArmoryDispatch - 奖品105 概率范围8000
+25-01-20.20:12:40.419 [main            ] INFO  StrategyArmoryDispatch - 奖品106 概率范围90
+25-01-20.20:12:40.419 [main            ] INFO  StrategyArmoryDispatch - 奖品107 概率范围10
+25-01-20.20:12:40.663 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-01-20.20:12:41.006 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-01-20.20:12:41.031 [main            ] INFO  StrategyArmoryDispatch - 奖品102 概率范围1000
+25-01-20.20:12:41.031 [main            ] INFO  StrategyArmoryDispatch - 奖品103 概率范围500
+25-01-20.20:12:41.031 [main            ] INFO  StrategyArmoryDispatch - 奖品104 概率范围300
+25-01-20.20:12:41.031 [main            ] INFO  StrategyArmoryDispatch - 奖品105 概率范围8000
+25-01-20.20:12:41.031 [main            ] INFO  StrategyArmoryDispatch - 奖品106 概率范围90
+25-01-20.20:12:41.032 [main            ] INFO  StrategyArmoryDispatch - 奖品107 概率范围10
+25-01-20.20:12:41.137 [main            ] INFO  StrategyArmoryDispatch - 奖品101 概率范围8000
+25-01-20.20:12:41.141 [main            ] INFO  StrategyArmoryDispatch - 奖品102 概率范围1000
+25-01-20.20:12:41.143 [main            ] INFO  StrategyArmoryDispatch - 奖品103 概率范围500
+25-01-20.20:12:41.143 [main            ] INFO  StrategyArmoryDispatch - 奖品104 概率范围300
+25-01-20.20:12:41.143 [main            ] INFO  StrategyArmoryDispatch - 奖品105 概率范围100
+25-01-20.20:12:41.143 [main            ] INFO  StrategyArmoryDispatch - 奖品106 概率范围90
+25-01-20.20:12:41.143 [main            ] INFO  StrategyArmoryDispatch - 奖品107 概率范围10
+25-01-20.20:12:41.227 [main            ] INFO  StrategyArmoryDispatch - 奖品102 概率范围1000
+25-01-20.20:12:41.227 [main            ] INFO  StrategyArmoryDispatch - 奖品103 概率范围500
+25-01-20.20:12:41.227 [main            ] INFO  StrategyArmoryDispatch - 奖品104 概率范围300
+25-01-20.20:12:41.227 [main            ] INFO  StrategyArmoryDispatch - 奖品105 概率范围100
+25-01-20.20:12:41.227 [main            ] INFO  StrategyArmoryDispatch - 奖品106 概率范围90
+25-01-20.20:12:41.227 [main            ] INFO  StrategyArmoryDispatch - 奖品107 概率范围10
+25-01-20.20:12:41.256 [main            ] INFO  RuleBlackListLogicChain - 抽奖责任链-黑名单开始 userId: user strategyId: 10002 ruleModel: rule_blacklist
+25-01-20.20:12:41.350 [main            ] INFO  RuleBlackListLogicChain - 抽奖责任链-黑名单放行 userId: user strategyId: 10002 ruleModel: rule_blacklist
+25-01-20.20:12:41.350 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: user strategyId: 10002 ruleModel: rule_weight
+25-01-20.20:12:41.354 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重放行 userId: user strategyId: 10002 ruleModel: rule_weight
+25-01-20.20:12:41.357 [main            ] INFO  DefaultLogicChain      - 抽奖责任链-默认处理 userId: user strategyId: 10002 ruleModel: rule_default awardId: 101
+25-01-20.20:12:41.359 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 user 10002 101 rule_default
+25-01-20.20:12:41.396 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-01-20.20:12:41.397 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-01-20.20:12:41.399 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_luck_award code:0001
+25-01-20.20:12:41.400 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 user 10002 101 1,100
+25-01-20.20:12:41.575 [main            ] INFO  RaffleStrategyTest     - 请求参数：{"strategyId":10002,"userId":"user"}
+25-01-20.20:12:41.579 [main            ] INFO  RaffleStrategyTest     - 测试结果：{"awardConfig":"1,100","awardId":101,"strategyId":10002}
+25-01-20.20:12:41.599 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-01-20.20:12:41.614 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-01-20.20:13:02.470 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.2 on BestHul with PID 36728 (started by 34404 in D:\Learning\bugstack\big-market-huling\big-market-huling-app)
+25-01-20.20:13:02.471 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-01-20.20:13:03.093 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-01-20.20:13:03.095 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-01-20.20:13:03.130 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+25-01-20.20:13:03.886 [main            ] INFO  Version                - Redisson 3.23.4
+25-01-20.20:13:04.152 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-01-20.20:13:04.166 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-01-20.20:13:06.092 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-01-20.20:13:06.148 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 3.986 seconds (JVM running for 4.645)
+25-01-20.20:13:06.569 [main            ] INFO  StrategyArmoryDispatch - 奖品101 概率范围100
+25-01-20.20:13:06.569 [main            ] INFO  StrategyArmoryDispatch - 奖品102 概率范围1000
+25-01-20.20:13:06.569 [main            ] INFO  StrategyArmoryDispatch - 奖品103 概率范围500
+25-01-20.20:13:06.569 [main            ] INFO  StrategyArmoryDispatch - 奖品104 概率范围300
+25-01-20.20:13:06.569 [main            ] INFO  StrategyArmoryDispatch - 奖品105 概率范围8000
+25-01-20.20:13:06.570 [main            ] INFO  StrategyArmoryDispatch - 奖品106 概率范围90
+25-01-20.20:13:06.570 [main            ] INFO  StrategyArmoryDispatch - 奖品107 概率范围10
+25-01-20.20:13:06.732 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-01-20.20:13:06.953 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-01-20.20:13:06.977 [main            ] INFO  StrategyArmoryDispatch - 奖品102 概率范围1000
+25-01-20.20:13:06.977 [main            ] INFO  StrategyArmoryDispatch - 奖品103 概率范围500
+25-01-20.20:13:06.977 [main            ] INFO  StrategyArmoryDispatch - 奖品104 概率范围300
+25-01-20.20:13:06.977 [main            ] INFO  StrategyArmoryDispatch - 奖品105 概率范围8000
+25-01-20.20:13:06.977 [main            ] INFO  StrategyArmoryDispatch - 奖品106 概率范围90
+25-01-20.20:13:06.977 [main            ] INFO  StrategyArmoryDispatch - 奖品107 概率范围10
+25-01-20.20:13:07.061 [main            ] INFO  StrategyArmoryDispatch - 奖品101 概率范围8000
+25-01-20.20:13:07.062 [main            ] INFO  StrategyArmoryDispatch - 奖品102 概率范围1000
+25-01-20.20:13:07.062 [main            ] INFO  StrategyArmoryDispatch - 奖品103 概率范围500
+25-01-20.20:13:07.062 [main            ] INFO  StrategyArmoryDispatch - 奖品104 概率范围300
+25-01-20.20:13:07.062 [main            ] INFO  StrategyArmoryDispatch - 奖品105 概率范围100
+25-01-20.20:13:07.062 [main            ] INFO  StrategyArmoryDispatch - 奖品106 概率范围90
+25-01-20.20:13:07.063 [main            ] INFO  StrategyArmoryDispatch - 奖品107 概率范围10
+25-01-20.20:13:07.133 [main            ] INFO  StrategyArmoryDispatch - 奖品102 概率范围1000
+25-01-20.20:13:07.133 [main            ] INFO  StrategyArmoryDispatch - 奖品103 概率范围500
+25-01-20.20:13:07.133 [main            ] INFO  StrategyArmoryDispatch - 奖品104 概率范围300
+25-01-20.20:13:07.133 [main            ] INFO  StrategyArmoryDispatch - 奖品105 概率范围100
+25-01-20.20:13:07.133 [main            ] INFO  StrategyArmoryDispatch - 奖品106 概率范围90
+25-01-20.20:13:07.134 [main            ] INFO  StrategyArmoryDispatch - 奖品107 概率范围10
+25-01-20.20:13:07.153 [main            ] INFO  RuleBlackListLogicChain - 抽奖责任链-黑名单开始 userId: user1 strategyId: 10002 ruleModel: rule_blacklist
+25-01-20.20:13:07.234 [main            ] INFO  RuleBlackListLogicChain - 抽奖责任链-黑名单接管 userId: user1 strategyId: 10002 ruleModel: rule_blacklist awardId: 100
+25-01-20.20:13:07.236 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 user1 10002 100 rule_blacklist
+25-01-20.20:13:07.372 [main            ] INFO  RaffleStrategyTest     - 请求参数：{"strategyId":10002,"userId":"user1"}
+25-01-20.20:13:07.376 [main            ] INFO  RaffleStrategyTest     - 测试结果：{"awardId":100}
+25-01-20.20:13:07.392 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-01-20.20:13:07.402 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-01-20.20:13:51.570 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.2 on BestHul with PID 38704 (started by 34404 in D:\Learning\bugstack\big-market-huling\big-market-huling-app)
+25-01-20.20:13:51.571 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-01-20.20:13:52.198 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-01-20.20:13:52.203 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-01-20.20:13:52.230 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+25-01-20.20:13:52.947 [main            ] INFO  Version                - Redisson 3.23.4
+25-01-20.20:13:53.191 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-01-20.20:13:53.205 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-01-20.20:13:55.122 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-01-20.20:13:55.201 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 3.994 seconds (JVM running for 4.633)
+25-01-20.20:13:55.798 [main            ] INFO  StrategyArmoryDispatch - 奖品101 概率范围100
+25-01-20.20:13:55.799 [main            ] INFO  StrategyArmoryDispatch - 奖品102 概率范围1000
+25-01-20.20:13:55.799 [main            ] INFO  StrategyArmoryDispatch - 奖品103 概率范围500
+25-01-20.20:13:55.799 [main            ] INFO  StrategyArmoryDispatch - 奖品104 概率范围300
+25-01-20.20:13:55.799 [main            ] INFO  StrategyArmoryDispatch - 奖品105 概率范围8000
+25-01-20.20:13:55.799 [main            ] INFO  StrategyArmoryDispatch - 奖品106 概率范围90
+25-01-20.20:13:55.800 [main            ] INFO  StrategyArmoryDispatch - 奖品107 概率范围10
+25-01-20.20:13:56.068 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-01-20.20:13:56.420 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-01-20.20:13:56.451 [main            ] INFO  StrategyArmoryDispatch - 奖品102 概率范围1000
+25-01-20.20:13:56.451 [main            ] INFO  StrategyArmoryDispatch - 奖品103 概率范围500
+25-01-20.20:13:56.451 [main            ] INFO  StrategyArmoryDispatch - 奖品104 概率范围300
+25-01-20.20:13:56.451 [main            ] INFO  StrategyArmoryDispatch - 奖品105 概率范围8000
+25-01-20.20:13:56.451 [main            ] INFO  StrategyArmoryDispatch - 奖品106 概率范围90
+25-01-20.20:13:56.451 [main            ] INFO  StrategyArmoryDispatch - 奖品107 概率范围10
+25-01-20.20:13:56.545 [main            ] INFO  StrategyArmoryDispatch - 奖品101 概率范围8000
+25-01-20.20:13:56.545 [main            ] INFO  StrategyArmoryDispatch - 奖品102 概率范围1000
+25-01-20.20:13:56.545 [main            ] INFO  StrategyArmoryDispatch - 奖品103 概率范围500
+25-01-20.20:13:56.545 [main            ] INFO  StrategyArmoryDispatch - 奖品104 概率范围300
+25-01-20.20:13:56.545 [main            ] INFO  StrategyArmoryDispatch - 奖品105 概率范围100
+25-01-20.20:13:56.547 [main            ] INFO  StrategyArmoryDispatch - 奖品106 概率范围90
+25-01-20.20:13:56.547 [main            ] INFO  StrategyArmoryDispatch - 奖品107 概率范围10
+25-01-20.20:13:56.615 [main            ] INFO  StrategyArmoryDispatch - 奖品102 概率范围1000
+25-01-20.20:13:56.615 [main            ] INFO  StrategyArmoryDispatch - 奖品103 概率范围500
+25-01-20.20:13:56.615 [main            ] INFO  StrategyArmoryDispatch - 奖品104 概率范围300
+25-01-20.20:13:56.615 [main            ] INFO  StrategyArmoryDispatch - 奖品105 概率范围100
+25-01-20.20:13:56.616 [main            ] INFO  StrategyArmoryDispatch - 奖品106 概率范围90
+25-01-20.20:13:56.616 [main            ] INFO  StrategyArmoryDispatch - 奖品107 概率范围10
+25-01-20.20:13:56.638 [main            ] INFO  RuleBlackListLogicChain - 抽奖责任链-黑名单开始 userId: user strategyId: 10002 ruleModel: rule_blacklist
+25-01-20.20:13:56.717 [main            ] INFO  RuleBlackListLogicChain - 抽奖责任链-黑名单放行 userId: user strategyId: 10002 ruleModel: rule_blacklist
+25-01-20.20:13:56.717 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: user strategyId: 10002 ruleModel: rule_weight
+25-01-20.20:13:56.724 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: user strategyId: 10002 ruleModel: rule_weight awardId: 102
+25-01-20.20:13:56.727 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 user 10002 102 rule_weight
+25-01-20.20:13:56.963 [main            ] INFO  RaffleStrategyTest     - 请求参数：{"strategyId":10002,"userId":"user"}
+25-01-20.20:13:56.966 [main            ] INFO  RaffleStrategyTest     - 测试结果：{"awardId":102}
+25-01-20.20:13:56.978 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-01-20.20:13:56.989 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-01-20.22:43:34.909 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.2 on BestHul with PID 26796 (started by 34404 in D:\Learning\bugstack\big-market-huling\big-market-huling-app)
+25-01-20.22:43:34.910 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-01-20.22:43:35.556 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-01-20.22:43:35.558 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-01-20.22:43:35.591 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 0 Redis repository interfaces.
+25-01-20.22:43:36.315 [main            ] INFO  Version                - Redisson 3.23.4
+25-01-20.22:43:36.597 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-01-20.22:43:36.612 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-01-20.22:43:38.516 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-01-20.22:43:38.580 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 3.963 seconds (JVM running for 4.525)
+25-01-20.22:43:39.003 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-01-20.22:43:39.191 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-01-20.22:43:39.273 [main            ] INFO  StrategyArmoryDispatch - 奖品101 概率范围8000
+25-01-20.22:43:39.273 [main            ] INFO  StrategyArmoryDispatch - 奖品102 概率范围1000
+25-01-20.22:43:39.273 [main            ] INFO  StrategyArmoryDispatch - 奖品103 概率范围500
+25-01-20.22:43:39.273 [main            ] INFO  StrategyArmoryDispatch - 奖品104 概率范围300
+25-01-20.22:43:39.273 [main            ] INFO  StrategyArmoryDispatch - 奖品105 概率范围100
+25-01-20.22:43:39.273 [main            ] INFO  StrategyArmoryDispatch - 奖品106 概率范围90
+25-01-20.22:43:39.273 [main            ] INFO  StrategyArmoryDispatch - 奖品107 概率范围10
+25-01-20.22:43:39.432 [main            ] INFO  StrategyArmoryDispatch - 奖品102 概率范围1000
+25-01-20.22:43:39.433 [main            ] INFO  StrategyArmoryDispatch - 奖品103 概率范围500
+25-01-20.22:43:39.433 [main            ] INFO  StrategyArmoryDispatch - 奖品104 概率范围300
+25-01-20.22:43:39.433 [main            ] INFO  StrategyArmoryDispatch - 奖品105 概率范围100
+25-01-20.22:43:39.433 [main            ] INFO  StrategyArmoryDispatch - 奖品106 概率范围90
+25-01-20.22:43:39.433 [main            ] INFO  StrategyArmoryDispatch - 奖品107 概率范围10
+25-01-20.22:43:39.507 [main            ] INFO  RuleBlackListLogicChain - 抽奖责任链-黑名单开始 userId: user strategyId: 10002 ruleModel: rule_blacklist
+25-01-20.22:43:39.552 [main            ] INFO  RuleBlackListLogicChain - 抽奖责任链-黑名单放行 userId: user strategyId: 10002 ruleModel: rule_blacklist
+25-01-20.22:43:39.553 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: user strategyId: 10002 ruleModel: rule_weight
+25-01-20.22:43:39.561 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: user strategyId: 10002 ruleModel: rule_weight awardId: 102
+25-01-20.22:43:39.563 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 user 10002 102 rule_weight
+25-01-20.22:43:39.681 [main            ] INFO  RaffleStrategyTest     - 请求参数：{"strategyId":10002,"userId":"user"}
+25-01-20.22:43:39.685 [main            ] INFO  RaffleStrategyTest     - 测试结果：{"awardId":102}
+25-01-20.22:43:39.698 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-01-20.22:43:39.707 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-01-20.22:44:11.939 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.2 on BestHul with PID 36052 (started by 34404 in D:\Learning\bugstack\big-market-huling\big-market-huling-app)
+25-01-20.22:44:11.940 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-01-20.22:44:12.557 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-01-20.22:44:12.559 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-01-20.22:44:12.592 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+25-01-20.22:44:13.366 [main            ] INFO  Version                - Redisson 3.23.4
+25-01-20.22:44:13.653 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-01-20.22:44:13.670 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-01-20.22:44:15.878 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-01-20.22:44:15.950 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 4.339 seconds (JVM running for 5.058)
+25-01-20.22:44:16.363 [main            ] INFO  StrategyArmoryDispatch - 奖品101 概率范围8000
+25-01-20.22:44:16.364 [main            ] INFO  StrategyArmoryDispatch - 奖品102 概率范围1000
+25-01-20.22:44:16.364 [main            ] INFO  StrategyArmoryDispatch - 奖品103 概率范围500
+25-01-20.22:44:16.364 [main            ] INFO  StrategyArmoryDispatch - 奖品104 概率范围300
+25-01-20.22:44:16.364 [main            ] INFO  StrategyArmoryDispatch - 奖品105 概率范围100
+25-01-20.22:44:16.364 [main            ] INFO  StrategyArmoryDispatch - 奖品106 概率范围90
+25-01-20.22:44:16.364 [main            ] INFO  StrategyArmoryDispatch - 奖品107 概率范围10
+25-01-20.22:44:16.515 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-01-20.22:44:16.715 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-01-20.22:44:16.740 [main            ] INFO  StrategyArmoryDispatch - 奖品102 概率范围1000
+25-01-20.22:44:16.740 [main            ] INFO  StrategyArmoryDispatch - 奖品103 概率范围500
+25-01-20.22:44:16.740 [main            ] INFO  StrategyArmoryDispatch - 奖品104 概率范围300
+25-01-20.22:44:16.740 [main            ] INFO  StrategyArmoryDispatch - 奖品105 概率范围100
+25-01-20.22:44:16.740 [main            ] INFO  StrategyArmoryDispatch - 奖品106 概率范围90
+25-01-20.22:44:16.740 [main            ] INFO  StrategyArmoryDispatch - 奖品107 概率范围10
+25-01-20.22:44:16.777 [main            ] INFO  RuleBlackListLogicChain - 抽奖责任链-黑名单开始 userId: user1 strategyId: 10002 ruleModel: rule_blacklist
+25-01-20.22:44:16.842 [main            ] INFO  RuleBlackListLogicChain - 抽奖责任链-黑名单接管 userId: user1 strategyId: 10002 ruleModel: rule_blacklist awardId: 100
+25-01-20.22:44:16.844 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 user1 10002 100 rule_blacklist
+25-01-20.22:44:17.147 [main            ] INFO  RaffleStrategyTest     - 请求参数：{"strategyId":10002,"userId":"user1"}
+25-01-20.22:44:17.150 [main            ] INFO  RaffleStrategyTest     - 测试结果：{"awardId":100}
+25-01-20.22:44:17.164 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-01-20.22:44:17.175 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-01-20.22:46:01.350 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.2 on BestHul with PID 29632 (started by 34404 in D:\Learning\bugstack\big-market-huling\big-market-huling-app)
+25-01-20.22:46:01.352 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-01-20.22:46:02.056 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-01-20.22:46:02.059 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-01-20.22:46:02.091 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+25-01-20.22:46:02.953 [main            ] INFO  Version                - Redisson 3.23.4
+25-01-20.22:46:03.235 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-01-20.22:46:03.262 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-01-20.22:46:05.232 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-01-20.22:46:05.299 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 4.242 seconds (JVM running for 4.828)
+25-01-20.22:46:05.793 [main            ] INFO  StrategyArmoryDispatch - 奖品101 概率范围8000
+25-01-20.22:46:05.794 [main            ] INFO  StrategyArmoryDispatch - 奖品102 概率范围1000
+25-01-20.22:46:05.794 [main            ] INFO  StrategyArmoryDispatch - 奖品103 概率范围500
+25-01-20.22:46:05.794 [main            ] INFO  StrategyArmoryDispatch - 奖品104 概率范围300
+25-01-20.22:46:05.794 [main            ] INFO  StrategyArmoryDispatch - 奖品105 概率范围100
+25-01-20.22:46:05.794 [main            ] INFO  StrategyArmoryDispatch - 奖品106 概率范围90
+25-01-20.22:46:05.794 [main            ] INFO  StrategyArmoryDispatch - 奖品107 概率范围10
+25-01-20.22:46:05.938 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-01-20.22:46:06.138 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-01-20.22:46:06.163 [main            ] INFO  StrategyArmoryDispatch - 奖品102 概率范围1000
+25-01-20.22:46:06.163 [main            ] INFO  StrategyArmoryDispatch - 奖品103 概率范围500
+25-01-20.22:46:06.163 [main            ] INFO  StrategyArmoryDispatch - 奖品104 概率范围300
+25-01-20.22:46:06.163 [main            ] INFO  StrategyArmoryDispatch - 奖品105 概率范围100
+25-01-20.22:46:06.163 [main            ] INFO  StrategyArmoryDispatch - 奖品106 概率范围90
+25-01-20.22:46:06.164 [main            ] INFO  StrategyArmoryDispatch - 奖品107 概率范围10
+25-01-20.22:46:06.199 [main            ] INFO  RuleBlackListLogicChain - 抽奖责任链-黑名单开始 userId: user strategyId: 10002 ruleModel: rule_blacklist
+25-01-20.22:46:06.277 [main            ] INFO  RuleBlackListLogicChain - 抽奖责任链-黑名单放行 userId: user strategyId: 10002 ruleModel: rule_blacklist
+25-01-20.22:46:06.277 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: user strategyId: 10002 ruleModel: rule_weight
+25-01-20.22:46:06.281 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重放行 userId: user strategyId: 10002 ruleModel: rule_weight
+25-01-20.22:46:06.284 [main            ] INFO  DefaultLogicChain      - 抽奖责任链-默认处理 userId: user strategyId: 10002 ruleModel: rule_default awardId: 101
+25-01-20.22:46:06.287 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 user 10002 101 rule_default
+25-01-20.22:46:06.351 [main            ] INFO  RuleLockLogicTreeNode  - 规则过滤-次数锁 userId:user strategyId:10002 awardId:101
+25-01-20.22:46:06.354 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0001
+25-01-20.22:46:06.355 [main            ] INFO  RuleLuckAwardLogicTreeNode - 规则过滤-兜底奖品 userId:user strategyId:10002 awardId:101 ruleValue:101:1,100
+25-01-20.22:46:06.355 [main            ] INFO  RuleLuckAwardLogicTreeNode - 规则过滤-兜底奖品 userId:user strategyId:10002 awardId:101 awardRuleValue:1,100
+25-01-20.22:46:06.357 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_luck_award code:0001
+25-01-20.22:46:06.357 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 user 10002 101 1,100
+25-01-20.22:46:06.546 [main            ] INFO  RaffleStrategyTest     - 请求参数：{"strategyId":10002,"userId":"user"}
+25-01-20.22:46:06.549 [main            ] INFO  RaffleStrategyTest     - 测试结果：{"awardConfig":"1,100","awardId":101,"strategyId":10002}
+25-01-20.22:46:06.565 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-01-20.22:46:06.576 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-01-20.22:48:45.203 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.2 on BestHul with PID 25468 (started by 34404 in D:\Learning\bugstack\big-market-huling\big-market-huling-app)
+25-01-20.22:48:45.204 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-01-20.22:48:45.955 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-01-20.22:48:45.957 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-01-20.22:48:45.983 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+25-01-20.22:48:46.777 [main            ] INFO  Version                - Redisson 3.23.4
+25-01-20.22:48:47.028 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-01-20.22:48:47.043 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-01-20.22:48:48.989 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-01-20.22:48:49.047 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 4.16 seconds (JVM running for 4.689)
+25-01-20.22:48:49.430 [main            ] INFO  StrategyArmoryDispatch - 奖品101 概率范围8000
+25-01-20.22:48:49.431 [main            ] INFO  StrategyArmoryDispatch - 奖品102 概率范围1000
+25-01-20.22:48:49.431 [main            ] INFO  StrategyArmoryDispatch - 奖品103 概率范围500
+25-01-20.22:48:49.431 [main            ] INFO  StrategyArmoryDispatch - 奖品104 概率范围300
+25-01-20.22:48:49.431 [main            ] INFO  StrategyArmoryDispatch - 奖品105 概率范围100
+25-01-20.22:48:49.431 [main            ] INFO  StrategyArmoryDispatch - 奖品106 概率范围90
+25-01-20.22:48:49.432 [main            ] INFO  StrategyArmoryDispatch - 奖品107 概率范围10
+25-01-20.22:48:49.669 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-01-20.22:48:49.905 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-01-20.22:48:49.929 [main            ] INFO  StrategyArmoryDispatch - 奖品102 概率范围1000
+25-01-20.22:48:49.929 [main            ] INFO  StrategyArmoryDispatch - 奖品103 概率范围500
+25-01-20.22:48:49.929 [main            ] INFO  StrategyArmoryDispatch - 奖品104 概率范围300
+25-01-20.22:48:49.929 [main            ] INFO  StrategyArmoryDispatch - 奖品105 概率范围100
+25-01-20.22:48:49.929 [main            ] INFO  StrategyArmoryDispatch - 奖品106 概率范围90
+25-01-20.22:48:49.929 [main            ] INFO  StrategyArmoryDispatch - 奖品107 概率范围10
+25-01-20.22:48:49.953 [main            ] INFO  RuleBlackListLogicChain - 抽奖责任链-黑名单开始 userId: user strategyId: 10002 ruleModel: rule_blacklist
+25-01-20.22:48:50.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-01-20.22:48:50.029 [main            ] INFO  RuleBlackListLogicChain - 抽奖责任链-黑名单放行 userId: user strategyId: 10002 ruleModel: rule_blacklist
+25-01-20.22:48:50.029 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: user strategyId: 10002 ruleModel: rule_weight
+25-01-20.22:48:50.033 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重放行 userId: user strategyId: 10002 ruleModel: rule_weight
+25-01-20.22:48:50.036 [main            ] INFO  DefaultLogicChain      - 抽奖责任链-默认处理 userId: user strategyId: 10002 ruleModel: rule_default awardId: 101
+25-01-20.22:48:50.038 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 user 10002 101 rule_default
+25-01-20.22:48:50.082 [main            ] INFO  RuleLockLogicTreeNode  - 规则过滤-次数锁 userId:user strategyId:10002 awardId:101
+25-01-20.22:48:50.084 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-01-20.22:48:50.085 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减 userId:user strategyId:10002 awardId:101
+25-01-20.22:48:50.100 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减-成功 userId:user strategyId:10002 awardId:101
+25-01-20.22:48:50.183 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0000
+25-01-20.22:48:50.220 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-01-20.22:48:50.230 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-01-20.22:57:20.168 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.2 on BestHul with PID 38464 (started by 34404 in D:\Learning\bugstack\big-market-huling\big-market-huling-app)
+25-01-20.22:57:20.168 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-01-20.22:57:20.909 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-01-20.22:57:20.911 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-01-20.22:57:20.934 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+25-01-20.22:57:21.872 [main            ] INFO  Version                - Redisson 3.23.4
+25-01-20.22:57:22.173 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-01-20.22:57:22.188 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-01-20.22:57:24.006 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-01-20.22:57:24.073 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 4.197 seconds (JVM running for 4.783)
+25-01-20.22:57:24.536 [main            ] INFO  StrategyArmoryDispatch - 奖品101 概率范围8000
+25-01-20.22:57:24.538 [main            ] INFO  StrategyArmoryDispatch - 奖品102 概率范围1000
+25-01-20.22:57:24.538 [main            ] INFO  StrategyArmoryDispatch - 奖品103 概率范围500
+25-01-20.22:57:24.538 [main            ] INFO  StrategyArmoryDispatch - 奖品104 概率范围300
+25-01-20.22:57:24.538 [main            ] INFO  StrategyArmoryDispatch - 奖品105 概率范围100
+25-01-20.22:57:24.538 [main            ] INFO  StrategyArmoryDispatch - 奖品106 概率范围90
+25-01-20.22:57:24.538 [main            ] INFO  StrategyArmoryDispatch - 奖品107 概率范围10
+25-01-20.22:57:24.711 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-01-20.22:57:24.909 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-01-20.22:57:24.932 [main            ] INFO  StrategyArmoryDispatch - 奖品102 概率范围1000
+25-01-20.22:57:24.932 [main            ] INFO  StrategyArmoryDispatch - 奖品103 概率范围500
+25-01-20.22:57:24.932 [main            ] INFO  StrategyArmoryDispatch - 奖品104 概率范围300
+25-01-20.22:57:24.932 [main            ] INFO  StrategyArmoryDispatch - 奖品105 概率范围100
+25-01-20.22:57:24.932 [main            ] INFO  StrategyArmoryDispatch - 奖品106 概率范围90
+25-01-20.22:57:24.933 [main            ] INFO  StrategyArmoryDispatch - 奖品107 概率范围10
+25-01-20.22:57:24.960 [main            ] INFO  RuleBlackListLogicChain - 抽奖责任链-黑名单开始 userId: user strategyId: 10002 ruleModel: rule_blacklist
+25-01-20.22:57:25.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-01-20.22:57:25.064 [main            ] INFO  RuleBlackListLogicChain - 抽奖责任链-黑名单放行 userId: user strategyId: 10002 ruleModel: rule_blacklist
+25-01-20.22:57:25.064 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: user strategyId: 10002 ruleModel: rule_weight
+25-01-20.22:57:25.067 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重放行 userId: user strategyId: 10002 ruleModel: rule_weight
+25-01-20.22:57:25.070 [main            ] INFO  DefaultLogicChain      - 抽奖责任链-默认处理 userId: user strategyId: 10002 ruleModel: rule_default awardId: 103
+25-01-20.22:57:25.072 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 user 10002 103 rule_default
+25-01-20.22:57:25.111 [main            ] INFO  RuleLockLogicTreeNode  - 规则过滤-次数锁 userId:user strategyId:10002 awardId:103
+25-01-20.22:57:25.113 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-01-20.22:57:25.114 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减 userId:user strategyId:10002 awardId:103
+25-01-20.22:57:25.129 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减-成功 userId:user strategyId:10002 awardId:103
+25-01-20.22:57:25.201 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0000
+25-01-20.22:57:25.202 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 user 10002 103 暂无
+25-01-20.22:57:25.371 [main            ] INFO  RaffleStrategyTest     - 请求参数：{"strategyId":10002,"userId":"user"}
+25-01-20.22:57:25.374 [main            ] INFO  RaffleStrategyTest     - 测试结果：{"awardConfig":"暂无","awardId":103,"strategyId":10002}
+25-01-20.22:57:25.388 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-01-20.22:57:25.396 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-01-20.23:02:55.781 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.2 on BestHul with PID 31232 (started by 34404 in D:\Learning\bugstack\big-market-huling\big-market-huling-app)
+25-01-20.23:02:55.782 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-01-20.23:02:56.388 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-01-20.23:02:56.390 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-01-20.23:02:56.419 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+25-01-20.23:02:57.172 [main            ] INFO  Version                - Redisson 3.23.4
+25-01-20.23:02:57.443 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-01-20.23:02:57.458 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-01-20.23:02:59.485 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-01-20.23:02:59.548 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 4.056 seconds (JVM running for 4.59)
+25-01-20.23:03:00.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-01-20.23:03:00.054 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存 strategyId:10002 awardId:101
+25-01-20.23:03:00.073 [scheduling-1    ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-01-20.23:03:00.076 [main            ] INFO  StrategyArmoryDispatch - 奖品101 概率范围8000
+25-01-20.23:03:00.077 [main            ] INFO  StrategyArmoryDispatch - 奖品102 概率范围1000
+25-01-20.23:03:00.077 [main            ] INFO  StrategyArmoryDispatch - 奖品103 概率范围500
+25-01-20.23:03:00.077 [main            ] INFO  StrategyArmoryDispatch - 奖品104 概率范围300
+25-01-20.23:03:00.077 [main            ] INFO  StrategyArmoryDispatch - 奖品105 概率范围100
+25-01-20.23:03:00.077 [main            ] INFO  StrategyArmoryDispatch - 奖品106 概率范围90
+25-01-20.23:03:00.077 [main            ] INFO  StrategyArmoryDispatch - 奖品107 概率范围10
+25-01-20.23:03:00.635 [scheduling-1    ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-01-20.23:03:00.683 [main            ] INFO  StrategyArmoryDispatch - 奖品102 概率范围1000
+25-01-20.23:03:00.683 [main            ] INFO  StrategyArmoryDispatch - 奖品103 概率范围500
+25-01-20.23:03:00.683 [main            ] INFO  StrategyArmoryDispatch - 奖品104 概率范围300
+25-01-20.23:03:00.683 [main            ] INFO  StrategyArmoryDispatch - 奖品105 概率范围100
+25-01-20.23:03:00.683 [main            ] INFO  StrategyArmoryDispatch - 奖品106 概率范围90
+25-01-20.23:03:00.684 [main            ] INFO  StrategyArmoryDispatch - 奖品107 概率范围10
+25-01-20.23:03:00.730 [main            ] INFO  RuleBlackListLogicChain - 抽奖责任链-黑名单开始 userId: user strategyId: 10002 ruleModel: rule_blacklist
+25-01-20.23:03:00.856 [main            ] INFO  RuleBlackListLogicChain - 抽奖责任链-黑名单放行 userId: user strategyId: 10002 ruleModel: rule_blacklist
+25-01-20.23:03:00.856 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: user strategyId: 10002 ruleModel: rule_weight
+25-01-20.23:03:00.862 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重放行 userId: user strategyId: 10002 ruleModel: rule_weight
+25-01-20.23:03:00.866 [main            ] INFO  DefaultLogicChain      - 抽奖责任链-默认处理 userId: user strategyId: 10002 ruleModel: rule_default awardId: 101
+25-01-20.23:03:00.869 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 user 10002 101 rule_default
+25-01-20.23:03:00.916 [main            ] INFO  RuleLockLogicTreeNode  - 规则过滤-次数锁 userId:user strategyId:10002 awardId:101
+25-01-20.23:03:00.918 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-01-20.23:03:00.920 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减 userId:user strategyId:10002 awardId:101
+25-01-20.23:03:00.935 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减-成功 userId:user strategyId:10002 awardId:101
+25-01-20.23:03:01.021 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0000
+25-01-20.23:03:01.021 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 user 10002 101 暂无
+25-01-20.23:03:01.227 [main            ] INFO  RaffleStrategyTest     - 请求参数：{"strategyId":10002,"userId":"user"}
+25-01-20.23:03:01.232 [main            ] INFO  RaffleStrategyTest     - 测试结果：{"awardConfig":"暂无","awardId":101,"strategyId":10002}
+25-01-20.23:03:01.251 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-01-20.23:03:01.262 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-01-20.23:03:13.185 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.2 on BestHul with PID 31712 (started by 34404 in D:\Learning\bugstack\big-market-huling\big-market-huling-app)
+25-01-20.23:03:13.186 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-01-20.23:03:13.924 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-01-20.23:03:13.926 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-01-20.23:03:13.962 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+25-01-20.23:03:14.782 [main            ] INFO  Version                - Redisson 3.23.4
+25-01-20.23:03:15.093 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-01-20.23:03:15.109 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-01-20.23:03:17.216 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-01-20.23:03:17.287 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 4.404 seconds (JVM running for 4.943)
+25-01-20.23:03:17.783 [main            ] INFO  StrategyArmoryDispatch - 奖品101 概率范围8000
+25-01-20.23:03:17.783 [main            ] INFO  StrategyArmoryDispatch - 奖品102 概率范围1000
+25-01-20.23:03:17.783 [main            ] INFO  StrategyArmoryDispatch - 奖品103 概率范围500
+25-01-20.23:03:17.783 [main            ] INFO  StrategyArmoryDispatch - 奖品104 概率范围300
+25-01-20.23:03:17.784 [main            ] INFO  StrategyArmoryDispatch - 奖品105 概率范围100
+25-01-20.23:03:17.784 [main            ] INFO  StrategyArmoryDispatch - 奖品106 概率范围90
+25-01-20.23:03:17.784 [main            ] INFO  StrategyArmoryDispatch - 奖品107 概率范围10
+25-01-20.23:03:18.006 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-01-20.23:03:18.248 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-01-20.23:03:18.271 [main            ] INFO  StrategyArmoryDispatch - 奖品102 概率范围1000
+25-01-20.23:03:18.271 [main            ] INFO  StrategyArmoryDispatch - 奖品103 概率范围500
+25-01-20.23:03:18.271 [main            ] INFO  StrategyArmoryDispatch - 奖品104 概率范围300
+25-01-20.23:03:18.272 [main            ] INFO  StrategyArmoryDispatch - 奖品105 概率范围100
+25-01-20.23:03:18.272 [main            ] INFO  StrategyArmoryDispatch - 奖品106 概率范围90
+25-01-20.23:03:18.272 [main            ] INFO  StrategyArmoryDispatch - 奖品107 概率范围10
+25-01-20.23:03:18.296 [main            ] INFO  RuleBlackListLogicChain - 抽奖责任链-黑名单开始 userId: user strategyId: 10002 ruleModel: rule_blacklist
+25-01-20.23:03:18.362 [main            ] INFO  RuleBlackListLogicChain - 抽奖责任链-黑名单放行 userId: user strategyId: 10002 ruleModel: rule_blacklist
+25-01-20.23:03:18.362 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: user strategyId: 10002 ruleModel: rule_weight
+25-01-20.23:03:18.368 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重放行 userId: user strategyId: 10002 ruleModel: rule_weight
+25-01-20.23:03:18.372 [main            ] INFO  DefaultLogicChain      - 抽奖责任链-默认处理 userId: user strategyId: 10002 ruleModel: rule_default awardId: 103
+25-01-20.23:03:18.375 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 user 10002 103 rule_default
+25-01-20.23:03:18.417 [main            ] INFO  RuleLockLogicTreeNode  - 规则过滤-次数锁 userId:user strategyId:10002 awardId:103
+25-01-20.23:03:18.419 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-01-20.23:03:18.420 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减 userId:user strategyId:10002 awardId:103
+25-01-20.23:03:18.436 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减-成功 userId:user strategyId:10002 awardId:103
+25-01-20.23:03:18.531 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0000
+25-01-20.23:03:18.531 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 user 10002 103 暂无
+25-01-20.23:03:18.767 [main            ] INFO  RaffleStrategyTest     - 请求参数：{"strategyId":10002,"userId":"user"}
+25-01-20.23:03:18.770 [main            ] INFO  RaffleStrategyTest     - 测试结果：{"awardConfig":"暂无","awardId":103,"strategyId":10002}
+25-01-20.23:03:20.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-01-20.23:03:20.018 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存 strategyId:10002 awardId:103
+25-01-20.23:03:25.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-01-20.23:03:25.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存 strategyId:10002 awardId:101
+25-01-20.23:03:30.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-01-20.23:03:30.016 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存 strategyId:10002 awardId:103
+25-01-20.23:03:35.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-01-20.23:03:40.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-01-20.23:03:45.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-01-20.23:03:50.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-01-20.23:03:55.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-01-20.23:04:00.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-01-20.23:04:05.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-01-20.23:04:10.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-01-20.23:04:15.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-01-20.23:04:15.250 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-01-20.23:04:15.272 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.

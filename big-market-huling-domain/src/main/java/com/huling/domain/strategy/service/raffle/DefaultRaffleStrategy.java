@@ -1,10 +1,13 @@
 package com.huling.domain.strategy.service.raffle;
 
 import com.huling.domain.strategy.apapter.repository.IStrategyRepository;
+import com.huling.domain.strategy.model.entity.StrategyAwardEntity;
 import com.huling.domain.strategy.model.vo.RuleTreeVO;
 import com.huling.domain.strategy.model.vo.StrategyAwardRuleModelVO;
 import com.huling.domain.strategy.model.vo.StrategyAwardStockKeyVO;
 import com.huling.domain.strategy.service.AbstractRaffleStrategy;
+import com.huling.domain.strategy.service.IRaffleAward;
+import com.huling.domain.strategy.service.IRaffleStock;
 import com.huling.domain.strategy.service.rule.chain.ILogicChain;
 import com.huling.domain.strategy.service.rule.chain.factory.DefaultChainFactory;
 import com.huling.domain.strategy.service.rule.tree.factory.DefaultTreeFactory;
@@ -13,10 +16,11 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 @Slf4j
 @Service
-public class DefaultRaffleStrategy extends AbstractRaffleStrategy {
+public class DefaultRaffleStrategy extends AbstractRaffleStrategy implements IRaffleStock, IRaffleAward {
 
     @Resource
     private DefaultChainFactory chainFactory;
@@ -60,5 +64,10 @@ public class DefaultRaffleStrategy extends AbstractRaffleStrategy {
     @Override
     public void updateStrategyAwardStock(Long strategyId, Long awardId) {
         repository.updateStrategyAwardStock(strategyId, awardId);
+    }
+
+    @Override
+    public List<StrategyAwardEntity> queryRaffleStrategyAwardList(Long strategyId) {
+        return repository.queryStrategyAwardList(strategyId);
     }
 }
