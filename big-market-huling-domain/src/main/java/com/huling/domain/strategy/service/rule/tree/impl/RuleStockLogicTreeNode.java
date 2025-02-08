@@ -1,6 +1,6 @@
 package com.huling.domain.strategy.service.rule.tree.impl;
 
-import com.huling.domain.strategy.apapter.repository.IStrategyRepository;
+import com.huling.domain.strategy.adapter.repository.IStrategyRepository;
 import com.huling.domain.strategy.model.vo.RuleLogicCheckTypeVO;
 import com.huling.domain.strategy.model.vo.StrategyAwardStockKeyVO;
 import com.huling.domain.strategy.service.armory.IStrategyDispatch;

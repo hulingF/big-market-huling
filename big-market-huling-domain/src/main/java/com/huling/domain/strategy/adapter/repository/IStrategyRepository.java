@@ -1,4 +1,4 @@
-package com.huling.domain.strategy.apapter.repository;
+package com.huling.domain.strategy.adapter.repository;
 
 import com.huling.domain.strategy.model.entity.StrategyAwardEntity;
 import com.huling.domain.strategy.model.entity.StrategyEntity;

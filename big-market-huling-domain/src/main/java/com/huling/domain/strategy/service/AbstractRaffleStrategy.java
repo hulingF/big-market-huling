@@ -1,6 +1,6 @@
 package com.huling.domain.strategy.service;
 
-import com.huling.domain.strategy.apapter.repository.IStrategyRepository;
+import com.huling.domain.strategy.adapter.repository.IStrategyRepository;
 import com.huling.domain.strategy.model.entity.RaffleAwardEntity;
 import com.huling.domain.strategy.model.entity.RaffleFactorEntity;
 import com.huling.domain.strategy.model.entity.StrategyAwardEntity;

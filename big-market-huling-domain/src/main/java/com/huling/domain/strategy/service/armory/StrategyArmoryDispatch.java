@@ -1,6 +1,6 @@
 package com.huling.domain.strategy.service.armory;
 
-import com.huling.domain.strategy.apapter.repository.IStrategyRepository;
+import com.huling.domain.strategy.adapter.repository.IStrategyRepository;
 import com.huling.domain.strategy.model.entity.StrategyAwardEntity;
 import com.huling.domain.strategy.model.entity.StrategyEntity;
 import com.huling.domain.strategy.model.entity.StrategyRuleEntity;

@@ -1,4 +1,4 @@
-package com.huling.test.domin;
+package com.huling.test.domin.strategy;
 
 import com.alibaba.fastjson2.JSON;
 import com.huling.domain.strategy.model.vo.*;

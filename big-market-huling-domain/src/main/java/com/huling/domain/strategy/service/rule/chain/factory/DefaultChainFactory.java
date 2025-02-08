@@ -1,6 +1,6 @@
 package com.huling.domain.strategy.service.rule.chain.factory;
 
-import com.huling.domain.strategy.apapter.repository.IStrategyRepository;
+import com.huling.domain.strategy.adapter.repository.IStrategyRepository;
 import com.huling.domain.strategy.model.entity.StrategyEntity;
 import com.huling.domain.strategy.service.rule.chain.ILogicChain;
 import lombok.*;

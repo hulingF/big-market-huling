@@ -1,4 +1,4 @@
-package com.huling.test.domin;
+package com.huling.test.domin.strategy;
 
 import com.huling.domain.strategy.service.armory.IStrategyArmory;
 import com.huling.domain.strategy.service.armory.IStrategyDispatch;

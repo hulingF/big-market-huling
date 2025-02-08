@@ -1,7 +1,7 @@
 package com.huling.test.infrastructure;
 
 import com.alibaba.fastjson2.JSON;
-import com.huling.domain.strategy.apapter.repository.IStrategyRepository;
+import com.huling.domain.strategy.adapter.repository.IStrategyRepository;
 import com.huling.domain.strategy.model.vo.RuleTreeVO;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;

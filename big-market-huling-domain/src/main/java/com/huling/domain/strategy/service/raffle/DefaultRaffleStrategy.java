@@ -1,6 +1,6 @@
 package com.huling.domain.strategy.service.raffle;
 
-import com.huling.domain.strategy.apapter.repository.IStrategyRepository;
+import com.huling.domain.strategy.adapter.repository.IStrategyRepository;
 import com.huling.domain.strategy.model.entity.StrategyAwardEntity;
 import com.huling.domain.strategy.model.vo.RuleTreeVO;
 import com.huling.domain.strategy.model.vo.StrategyAwardRuleModelVO;
