@@ -3,6 +3,7 @@ package com.huling.test.domin.activity;
 import com.alibaba.fastjson.JSON;
 import com.huling.domain.activity.model.entity.ActivityOrderEntity;
 import com.huling.domain.activity.model.entity.ActivityShopCartEntity;
+import com.huling.domain.activity.model.entity.SkuRechargeEntity;
 import com.huling.domain.activity.service.IRaffleOrder;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
@@ -22,11 +23,12 @@ public class RaffleOrderTest {
 
     @Test
     public void test_createRaffleActivityOrder() {
-        ActivityShopCartEntity activityShopCartEntity = new ActivityShopCartEntity();
-        activityShopCartEntity.setUserId("huling");
-        activityShopCartEntity.setSku(200L);
-        ActivityOrderEntity raffleActivityOrder = raffleOrder.createRaffleActivityOrder(activityShopCartEntity);
-        log.info("测试结果：{}", JSON.toJSONString(raffleActivityOrder));
+        SkuRechargeEntity skuRechargeEntity = new SkuRechargeEntity();
+        skuRechargeEntity.setUserId("huling");
+        skuRechargeEntity.setSku(200L);
+        skuRechargeEntity.setOutBusinessNo("17333");
+        String orderId = raffleOrder.createSkuRechargeOrder(skuRechargeEntity);
+        log.info("测试结果：{}", orderId);
     }
 
 }

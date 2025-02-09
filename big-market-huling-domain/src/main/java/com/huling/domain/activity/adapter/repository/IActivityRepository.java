@@ -1,5 +1,6 @@
 package com.huling.domain.activity.adapter.repository;
 
+import com.huling.domain.activity.model.aggragate.CreateOrderAggregate;
 import com.huling.domain.activity.model.entity.ActivityCountEntity;
 import com.huling.domain.activity.model.entity.ActivityEntity;
 import com.huling.domain.activity.model.entity.ActivitySkuEntity;
@@ -11,5 +12,7 @@ public interface IActivityRepository {
     ActivityEntity queryRaffleActivityByActivityId(Long activityId);
 
     ActivityCountEntity queryRaffleActivityCountByActivityCountId(Long activityCountId);
+
+    void doSaveOrder(CreateOrderAggregate createOrderAggregate);
 
 }

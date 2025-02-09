@@ -67,4 +67,9 @@ public class ActivityOrderEntity {
      */
     private OrderStateVO state;
 
+    /**
+     * 业务仿重ID - 外部透传的，确保幂等
+     */
+    private String outBusinessNo;
+
 }
