@@ -2,7 +2,7 @@ package com.huling.domain.activity.service;
 
 import com.huling.domain.activity.model.vo.ActivitySkuStockKeyVO;
 
-public interface ISkuStock {
+public interface IRaffleActivitySkuStockService {
 
     /**
      * 获取活动sku库存消耗队列

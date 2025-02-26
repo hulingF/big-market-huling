@@ -1,7 +1,7 @@
 package com.huling.trigger.job;
 
 import com.huling.domain.activity.model.vo.ActivitySkuStockKeyVO;
-import com.huling.domain.activity.service.ISkuStock;
+import com.huling.domain.activity.service.IRaffleActivitySkuStockService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
@@ -13,7 +13,7 @@ import javax.annotation.Resource;
 public class UpdateActivitySkuStockJob {
 
     @Resource
-    private ISkuStock skuStock;
+    private IRaffleActivitySkuStockService skuStock;
 
     @Scheduled(cron = "0/5 * * * * ?")
     public void exec() {

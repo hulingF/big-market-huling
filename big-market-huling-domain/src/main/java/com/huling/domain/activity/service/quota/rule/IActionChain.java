@@ -1,4 +1,4 @@
-package com.huling.domain.activity.service.rule;
+package com.huling.domain.activity.service.quota.rule;
 
 import com.huling.domain.activity.model.entity.ActivityCountEntity;
 import com.huling.domain.activity.model.entity.ActivityEntity;

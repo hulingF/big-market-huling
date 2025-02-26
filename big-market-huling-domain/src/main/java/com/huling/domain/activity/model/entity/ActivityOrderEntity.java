@@ -1,6 +1,6 @@
 package com.huling.domain.activity.model.entity;
 
-import com.huling.domain.activity.model.vo.OrderStateVO;
+import com.huling.domain.activity.model.vo.ActivityOrderStateVO;
 import lombok.*;
 
 import java.util.Date;
@@ -65,7 +65,7 @@ public class ActivityOrderEntity {
     /**
      * 订单状态
      */
-    private OrderStateVO state;
+    private ActivityOrderStateVO state;
 
     /**
      * 业务仿重ID - 外部透传的，确保幂等

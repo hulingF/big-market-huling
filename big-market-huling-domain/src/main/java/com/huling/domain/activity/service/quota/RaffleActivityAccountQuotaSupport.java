@@ -1,19 +1,19 @@
-package com.huling.domain.activity.service;
+package com.huling.domain.activity.service.quota;
 
 import com.huling.domain.activity.adapter.repository.IActivityRepository;
 import com.huling.domain.activity.model.entity.ActivityCountEntity;
 import com.huling.domain.activity.model.entity.ActivityEntity;
 import com.huling.domain.activity.model.entity.ActivitySkuEntity;
-import com.huling.domain.activity.service.rule.IActionChain;
-import com.huling.domain.activity.service.rule.factory.DefaultActivityChainFactory;
+import com.huling.domain.activity.service.quota.rule.IActionChain;
+import com.huling.domain.activity.service.quota.rule.factory.DefaultActivityChainFactory;
 
-public class RaffleActivitySupport {
+public class RaffleActivityAccountQuotaSupport {
 
     protected DefaultActivityChainFactory defaultActivityChainFactory;
 
     protected IActivityRepository activityRepository;
 
-    public RaffleActivitySupport(IActivityRepository activityRepository, DefaultActivityChainFactory defaultActivityChainFactory) {
+    public RaffleActivityAccountQuotaSupport(IActivityRepository activityRepository, DefaultActivityChainFactory defaultActivityChainFactory) {
         this.activityRepository = activityRepository;
         this.defaultActivityChainFactory = defaultActivityChainFactory;
     }

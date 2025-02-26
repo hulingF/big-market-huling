@@ -1,21 +1,22 @@
-package com.huling.domain.activity.service;
+package com.huling.domain.activity.service.quota;
 
 import com.huling.domain.activity.adapter.repository.IActivityRepository;
 import com.huling.domain.activity.model.aggragate.CreateOrderAggregate;
 import com.huling.domain.activity.model.entity.*;
 import com.huling.domain.activity.model.vo.ActivitySkuStockKeyVO;
-import com.huling.domain.activity.model.vo.OrderStateVO;
-import com.huling.domain.activity.service.rule.factory.DefaultActivityChainFactory;
+import com.huling.domain.activity.model.vo.ActivityOrderStateVO;
+import com.huling.domain.activity.service.IRaffleActivitySkuStockService;
+import com.huling.domain.activity.service.quota.rule.factory.DefaultActivityChainFactory;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
 
 @Service
-public class RaffleActivityService extends AbstractRaffleActivity implements ISkuStock {
+public class RaffleActivityAccountQuotaService extends AbstractRaffleActivityAccountQuota implements IRaffleActivitySkuStockService {
 
 
-    public RaffleActivityService(IActivityRepository activityRepository, DefaultActivityChainFactory defaultActivityChainFactory) {
+    public RaffleActivityAccountQuotaService(IActivityRepository activityRepository, DefaultActivityChainFactory defaultActivityChainFactory) {
         super(activityRepository, defaultActivityChainFactory);
     }
 
@@ -39,7 +40,7 @@ public class RaffleActivityService extends AbstractRaffleActivity implements ISk
         activityOrderEntity.setTotalCount(activityCountEntity.getTotalCount());
         activityOrderEntity.setDayCount(activityCountEntity.getDayCount());
         activityOrderEntity.setMonthCount(activityCountEntity.getMonthCount());
-        activityOrderEntity.setState(OrderStateVO.completed);
+        activityOrderEntity.setState(ActivityOrderStateVO.completed);
         activityOrderEntity.setOutBusinessNo(skuRechargeEntity.getOutBusinessNo());
         // 构建聚合对象
         return CreateOrderAggregate.builder()

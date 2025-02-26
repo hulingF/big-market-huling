@@ -1,4 +1,4 @@
-package com.huling.domain.activity.service.rule;
+package com.huling.domain.activity.service.quota.rule;
 
 public abstract class AbstractActionChain implements IActionChain {
 

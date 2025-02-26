@@ -5,7 +5,7 @@ import lombok.Getter;
 
 @Getter
 @AllArgsConstructor
-public enum OrderStateVO {
+public enum ActivityOrderStateVO {
 
     completed("completed", "完成");
 

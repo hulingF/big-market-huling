@@ -1,9 +1,8 @@
 package com.huling.domain.activity.adapter.repository;
 
 import com.huling.domain.activity.model.aggragate.CreateOrderAggregate;
-import com.huling.domain.activity.model.entity.ActivityCountEntity;
-import com.huling.domain.activity.model.entity.ActivityEntity;
-import com.huling.domain.activity.model.entity.ActivitySkuEntity;
+import com.huling.domain.activity.model.aggragate.CreatePartakeOrderAggregate;
+import com.huling.domain.activity.model.entity.*;
 import com.huling.domain.activity.model.vo.ActivitySkuStockKeyVO;
 
 import java.util.Date;
@@ -32,5 +31,15 @@ public interface IActivityRepository {
     void updateActivitySkuStock(Long sku);
 
     void clearActivitySkuStock(Long sku);
+
+    UserRaffleOrderEntity queryNoUsedRaffleOrder(PartakeRaffleActivityEntity partakeRaffleActivityEntity);
+
+    ActivityAccountEntity queryActivityAccountByUserId(String userId, Long activityId);
+
+    ActivityAccountMonthEntity queryActivityAccountMonthByUserId(String userId, Long activityId, String month);
+
+    ActivityAccountDayEntity queryActivityAccountDayByUserId(String userId, Long activityId, String day);
+
+    void saveCreatePartakeOrderAggregate(CreatePartakeOrderAggregate createPartakeOrderAggregate);
 
 }

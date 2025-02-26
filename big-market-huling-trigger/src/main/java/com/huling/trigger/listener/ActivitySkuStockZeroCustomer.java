@@ -2,7 +2,7 @@ package com.huling.trigger.listener;
 
 import com.alibaba.fastjson2.JSON;
 import com.alibaba.fastjson2.TypeReference;
-import com.huling.domain.activity.service.ISkuStock;
+import com.huling.domain.activity.service.IRaffleActivitySkuStockService;
 import com.huling.types.event.BaseEvent;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.annotation.Queue;
@@ -20,7 +20,7 @@ public class ActivitySkuStockZeroCustomer {
     private String topic;
 
     @Resource
-    private ISkuStock skuStock;
+    private IRaffleActivitySkuStockService skuStock;
 
     // queuesToDeclare：支持多个队列，将队列绑定到默认交换机上，routeKey为队列名称。
     @RabbitListener(queuesToDeclare = @Queue(value = "activity_sku_stock_zero"))

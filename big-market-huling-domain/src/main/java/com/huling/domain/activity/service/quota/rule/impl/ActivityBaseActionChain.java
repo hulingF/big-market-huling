@@ -1,10 +1,10 @@
-package com.huling.domain.activity.service.rule.impl;
+package com.huling.domain.activity.service.quota.rule.impl;
 
 import com.huling.domain.activity.model.entity.ActivityCountEntity;
 import com.huling.domain.activity.model.entity.ActivityEntity;
 import com.huling.domain.activity.model.entity.ActivitySkuEntity;
 import com.huling.domain.activity.model.vo.ActivityStateVO;
-import com.huling.domain.activity.service.rule.AbstractActionChain;
+import com.huling.domain.activity.service.quota.rule.AbstractActionChain;
 import com.huling.types.enums.ResponseCode;
 import com.huling.types.exception.AppException;
 import lombok.extern.slf4j.Slf4j;
