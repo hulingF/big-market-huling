@@ -14,7 +14,7 @@ import javax.annotation.Resource;
 
 @Slf4j
 @Component
-public class ActivitySkuStockZeroCustomer {
+public class ActivitySkuStockZeroConsumer {
 
     @Value("${spring.rabbitmq.topic.activity_sku_stock_zero}")
     private String topic;

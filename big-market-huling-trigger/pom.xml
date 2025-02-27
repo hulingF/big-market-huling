@@ -40,6 +40,10 @@
             <groupId>com.huling</groupId>
             <artifactId>big-market-huling-domain</artifactId>
         </dependency>
+        <dependency>
+            <groupId>cn.bugstack.middleware</groupId>
+            <artifactId>db-router-spring-boot-starter</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
