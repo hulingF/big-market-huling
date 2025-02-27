@@ -33,7 +33,7 @@ public class AwardServiceTest {
             userAwardRecordEntity.setActivityId(10031L);
             userAwardRecordEntity.setStrategyId(10002L);
             userAwardRecordEntity.setOrderId(RandomStringUtils.randomNumeric(12));
-            userAwardRecordEntity.setAwardId(101);
+            userAwardRecordEntity.setAwardId(101L);
             userAwardRecordEntity.setAwardTitle("随机积分");
             userAwardRecordEntity.setAwardTime(new Date());
             userAwardRecordEntity.setAwardState(AwardStateVO.create);

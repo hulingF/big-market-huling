@@ -2,13 +2,13 @@ package com.huling.api;
 
 import com.huling.api.dto.RaffleAwardListRequestDTO;
 import com.huling.api.dto.RaffleAwardListResponseDTO;
-import com.huling.api.dto.RaffleRequestDTO;
-import com.huling.api.dto.RaffleResponseDTO;
+import com.huling.api.dto.RaffleStrategyRequestDTO;
+import com.huling.api.dto.RaffleStrategyResponseDTO;
 import com.huling.api.response.Response;
 
 import java.util.List;
 
-public interface IRaffleService {
+public interface IRaffleStrategyService {
 
     /**
      * 策略装配接口
@@ -29,6 +29,6 @@ public interface IRaffleService {
      * @param requestDTO 随机抽奖请求
      * @return 抽奖结果
      */
-    Response<RaffleResponseDTO> randomRaffle(RaffleRequestDTO requestDTO);
+    Response<RaffleStrategyResponseDTO> randomRaffle(RaffleStrategyRequestDTO requestDTO);
 
 }

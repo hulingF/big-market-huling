@@ -31,7 +31,8 @@ public class StrategyArmoryDispatch implements IStrategyArmory, IStrategyDispatc
         // 2.缓存装配奖品库存
         for (StrategyAwardEntity strategyAwardEntity : strategyAwardEntities) {
             Long awardId = strategyAwardEntity.getAwardId();
-            Integer awardCount = strategyAwardEntity.getAwardCount();
+            Integer awardCount = strategyAwardEntity.getAwardCountSurplus();
+            // Integer awardCount = strategyAwardEntity.getAwardCount();
             cacheStrategyAwardCount(strategyId, awardId, awardCount);
         }
 
@@ -52,6 +53,12 @@ public class StrategyArmoryDispatch implements IStrategyArmory, IStrategyDispatc
             assembleLotteryStrategy(String.valueOf(strategyId).concat("_").concat(ruleWight), strategyAwardEntitiesClone);
         });
         return true;
+    }
+
+    @Override
+    public boolean assembleLotteryStrategyByActivityId(Long activityId) {
+        Long strategyId = repository.queryStrategyIdByActivityId(activityId);
+        return assembleLotteryStrategy(strategyId);
     }
 
     private void assembleLotteryStrategy(String key, List<StrategyAwardEntity> strategyAwardEntities) {

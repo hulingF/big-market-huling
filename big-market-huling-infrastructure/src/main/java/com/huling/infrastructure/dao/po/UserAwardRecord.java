@@ -18,7 +18,7 @@ public class UserAwardRecord {
     /** 抽奖订单ID【作为幂等使用】 */
     private String orderId;
     /** 奖品ID */
-    private Integer awardId;
+    private Long awardId;
     /** 奖品标题（名称） */
     private String awardTitle;
     /** 中奖时间 */

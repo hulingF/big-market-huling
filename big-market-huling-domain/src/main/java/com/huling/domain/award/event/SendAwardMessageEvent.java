@@ -43,7 +43,7 @@ public class SendAwardMessageEvent extends BaseEvent<SendAwardMessageEvent.SendA
         /**
          * 奖品ID
          */
-        private Integer awardId;
+        private Long awardId;
         /**
          * 奖品标题（名称）
          */
