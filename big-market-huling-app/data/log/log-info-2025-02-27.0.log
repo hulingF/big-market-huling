@@ -1,0 +1,179 @@
+25-02-27.11:32:38.038 [main            ] INFO  AwardServiceTest       - Starting AwardServiceTest using Java 17.0.2 on BestHul with PID 19276 (started by 34404 in D:\Learning\bugstack\big-market-huling\big-market-huling-app)
+25-02-27.11:32:38.040 [main            ] INFO  AwardServiceTest       - The following 1 profile is active: "dev"
+25-02-27.11:32:39.009 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-02-27.11:32:39.015 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-02-27.11:32:39.063 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31 ms. Found 0 Redis repository interfaces.
+25-02-27.11:32:40.101 [main            ] INFO  Version                - Redisson 3.23.4
+25-02-27.11:32:40.335 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-02-27.11:32:40.351 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-02-27.11:32:43.244 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-02-27.11:32:43.364 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+25-02-27.11:32:43.420 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#751bb780:0/SimpleConnection@5cb32140 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 11709]
+25-02-27.11:32:43.519 [main            ] INFO  AwardServiceTest       - Started AwardServiceTest in 5.879 seconds (JVM running for 6.786)
+25-02-27.11:32:44.048 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-02-27.11:32:44.205 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-02-27.11:32:44.294 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-02-27.11:32:44.511 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-02-27.11:32:44.514 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+25-02-27.11:33:43.556 [main            ] INFO  AwardServiceTest       - Starting AwardServiceTest using Java 17.0.2 on BestHul with PID 11088 (started by 34404 in D:\Learning\bugstack\big-market-huling\big-market-huling-app)
+25-02-27.11:33:43.557 [main            ] INFO  AwardServiceTest       - The following 1 profile is active: "dev"
+25-02-27.11:33:44.300 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-02-27.11:33:44.302 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-02-27.11:33:44.342 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28 ms. Found 0 Redis repository interfaces.
+25-02-27.11:33:45.314 [main            ] INFO  Version                - Redisson 3.23.4
+25-02-27.11:33:45.559 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-02-27.11:33:45.575 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-02-27.11:33:48.876 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-02-27.11:33:49.015 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+25-02-27.11:33:49.067 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#464d5365:0/SimpleConnection@1e12fdcf [delegate=amqp://admin@127.0.0.1:5672/, localPort= 11775]
+25-02-27.11:33:49.140 [main            ] INFO  AwardServiceTest       - Started AwardServiceTest in 5.891 seconds (JVM running for 6.447)
+25-02-27.11:33:49.599 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-02-27.11:33:49.749 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-02-27.11:33:49.835 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-02-27.11:33:50.009 [scheduling-1    ] INFO  UpdateActivitySkuStockJob - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-02-27.11:33:50.057 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-02-27.11:33:50.139 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-02-27.11:33:50.141 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+25-02-27.11:35:49.939 [main            ] INFO  AwardServiceTest       - Starting AwardServiceTest using Java 17.0.2 on BestHul with PID 24648 (started by 34404 in D:\Learning\bugstack\big-market-huling\big-market-huling-app)
+25-02-27.11:35:49.939 [main            ] INFO  AwardServiceTest       - The following 1 profile is active: "dev"
+25-02-27.11:35:50.663 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-02-27.11:35:50.665 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-02-27.11:35:50.700 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 0 Redis repository interfaces.
+25-02-27.11:35:51.635 [main            ] INFO  Version                - Redisson 3.23.4
+25-02-27.11:35:51.872 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-02-27.11:35:51.887 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-02-27.11:35:54.416 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-02-27.11:35:54.507 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+25-02-27.11:35:54.552 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#464d5365:0/SimpleConnection@1e12fdcf [delegate=amqp://admin@127.0.0.1:5672/, localPort= 11871]
+25-02-27.11:35:54.614 [main            ] INFO  AwardServiceTest       - Started AwardServiceTest in 4.981 seconds (JVM running for 5.639)
+25-02-27.11:35:55.007 [scheduling-1    ] INFO  UpdateActivitySkuStockJob - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-02-27.11:35:55.046 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-02-27.11:35:55.187 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-02-27.11:35:55.359 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-02-27.11:35:55.398 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":101,"awardTitle":"随机积分","userId":"huling"},"id":"𨤆𣶼熸𭊳𤨗𠄭","timestamp":1740627355061}
+25-02-27.11:35:55.399 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-02-27.11:35:55.420 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-02-27.11:35:55.465 [main            ] ERROR AwardRepository        - 写入中奖记录，发送MQ消息失败 userId: huling topic: send_award
+25-02-27.11:35:55.533 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-02-27.11:35:55.617 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-02-27.11:35:55.622 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+25-02-27.11:42:13.064 [main            ] INFO  AwardServiceTest       - Starting AwardServiceTest using Java 17.0.2 on BestHul with PID 28932 (started by 34404 in D:\Learning\bugstack\big-market-huling\big-market-huling-app)
+25-02-27.11:42:13.065 [main            ] INFO  AwardServiceTest       - The following 1 profile is active: "dev"
+25-02-27.11:42:13.858 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-02-27.11:42:13.863 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-02-27.11:42:13.938 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 38 ms. Found 0 Redis repository interfaces.
+25-02-27.11:42:15.305 [main            ] INFO  Version                - Redisson 3.23.4
+25-02-27.11:42:15.590 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-02-27.11:42:15.610 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-02-27.11:42:18.614 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-02-27.11:42:18.697 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+25-02-27.11:42:18.728 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#464d5365:0/SimpleConnection@50d6af87 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 12091]
+25-02-27.11:42:18.799 [main            ] INFO  AwardServiceTest       - Started AwardServiceTest in 6.045 seconds (JVM running for 6.614)
+25-02-27.11:42:19.302 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-02-27.11:42:19.447 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-02-27.11:42:19.481 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":101,"awardTitle":"随机积分","userId":"huling"},"id":"76189847261","timestamp":1740627739200}
+25-02-27.11:42:20.007 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":101,"awardTitle":"随机积分","userId":"huling"},"id":"12745294844","timestamp":1740627739995}
+25-02-27.11:42:20.541 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":101,"awardTitle":"随机积分","userId":"huling"},"id":"83471918535","timestamp":1740627740520}
+25-02-27.11:43:41.686 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-02-27.11:43:42.494 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-02-27.11:43:42.496 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+25-02-27.11:46:43.930 [main            ] INFO  AwardServiceTest       - Starting AwardServiceTest using Java 17.0.2 on BestHul with PID 10128 (started by 34404 in D:\Learning\bugstack\big-market-huling\big-market-huling-app)
+25-02-27.11:46:43.931 [main            ] INFO  AwardServiceTest       - The following 1 profile is active: "dev"
+25-02-27.11:46:44.682 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-02-27.11:46:44.685 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-02-27.11:46:44.730 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29 ms. Found 0 Redis repository interfaces.
+25-02-27.11:46:45.737 [main            ] INFO  Version                - Redisson 3.23.4
+25-02-27.11:46:45.992 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-02-27.11:46:46.027 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-02-27.11:46:49.411 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-02-27.11:46:49.492 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+25-02-27.11:46:49.542 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#38394dc3:0/SimpleConnection@1ec09a68 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 12233]
+25-02-27.11:46:49.659 [main            ] INFO  AwardServiceTest       - Started AwardServiceTest in 6.058 seconds (JVM running for 6.608)
+25-02-27.11:47:28.241 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-02-27.11:47:28.244 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-02-27.11:47:28.930 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-02-27.11:47:28.958 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-02-27.11:47:28.960 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+25-02-27.11:47:28.960 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+25-02-27.11:47:43.725 [main            ] INFO  AwardServiceTest       - Starting AwardServiceTest using Java 17.0.2 on BestHul with PID 5116 (started by 34404 in D:\Learning\bugstack\big-market-huling\big-market-huling-app)
+25-02-27.11:47:43.726 [main            ] INFO  AwardServiceTest       - The following 1 profile is active: "dev"
+25-02-27.11:47:44.483 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-02-27.11:47:44.487 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-02-27.11:47:44.534 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30 ms. Found 0 Redis repository interfaces.
+25-02-27.11:47:45.502 [main            ] INFO  Version                - Redisson 3.23.4
+25-02-27.11:47:45.746 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-02-27.11:47:45.764 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-02-27.11:47:48.740 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-02-27.11:47:48.873 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+25-02-27.11:47:48.925 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#696298ea:0/SimpleConnection@2e6f1f48 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 12272]
+25-02-27.11:47:49.045 [main            ] INFO  AwardServiceTest       - Started AwardServiceTest in 5.696 seconds (JVM running for 6.402)
+25-02-27.11:47:49.580 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-02-27.11:47:49.771 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-02-27.11:47:49.815 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":101,"awardTitle":"随机积分","userId":"huling"},"id":"32380735428","timestamp":1740628069465}
+25-02-27.11:47:49.823 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  SendAwardConsumer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":101,"awardTitle":"随机积分","userId":"huling"},"id":"32380735428","timestamp":1740628069465}
+25-02-27.11:47:50.348 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":101,"awardTitle":"随机积分","userId":"huling"},"id":"56814957741","timestamp":1740628070339}
+25-02-27.11:47:50.351 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  SendAwardConsumer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":101,"awardTitle":"随机积分","userId":"huling"},"id":"56814957741","timestamp":1740628070339}
+25-02-27.11:47:50.861 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":101,"awardTitle":"随机积分","userId":"huling"},"id":"67039425729","timestamp":1740628070856}
+25-02-27.11:47:50.862 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  SendAwardConsumer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":101,"awardTitle":"随机积分","userId":"huling"},"id":"67039425729","timestamp":1740628070856}
+25-02-27.11:48:27.517 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-02-27.11:48:27.519 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-02-27.11:48:28.177 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-02-27.11:48:28.317 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-02-27.11:48:28.318 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+25-02-27.11:48:28.319 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+25-02-27.12:03:09.040 [main            ] INFO  AwardServiceTest       - Starting AwardServiceTest using Java 17.0.2 on BestHul with PID 21916 (started by 34404 in D:\Learning\bugstack\big-market-huling\big-market-huling-app)
+25-02-27.12:03:09.040 [main            ] INFO  AwardServiceTest       - The following 1 profile is active: "dev"
+25-02-27.12:03:09.769 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-02-27.12:03:09.771 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-02-27.12:03:09.820 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31 ms. Found 0 Redis repository interfaces.
+25-02-27.12:03:10.758 [main            ] INFO  Version                - Redisson 3.23.4
+25-02-27.12:03:11.012 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-02-27.12:03:11.029 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-02-27.12:03:14.288 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-02-27.12:03:14.436 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+25-02-27.12:03:14.482 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#6cb662e8:0/SimpleConnection@54f62ac6 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 12520]
+25-02-27.12:03:14.571 [main            ] INFO  AwardServiceTest       - Started AwardServiceTest in 5.837 seconds (JVM running for 6.44)
+25-02-27.12:03:15.070 [pool-3-thread-1 ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-02-27.12:03:15.071 [pool-3-thread-2 ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-02-27.12:03:15.238 [pool-3-thread-1 ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-02-27.12:03:15.239 [pool-3-thread-2 ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-02-27.12:03:15.261 [pool-3-thread-3 ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":101,"awardTitle":"随机积分","userId":"huling"},"id":"32380735428","timestamp":1740628069465}
+25-02-27.12:03:15.261 [pool-3-thread-4 ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":101,"awardTitle":"随机积分","userId":"huling"},"id":"56814957741","timestamp":1740628070339}
+25-02-27.12:03:15.261 [pool-3-thread-5 ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":101,"awardTitle":"随机积分","userId":"huling"},"id":"67039425729","timestamp":1740628070856}
+25-02-27.12:03:15.267 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  SendAwardConsumer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":101,"awardTitle":"随机积分","userId":"huling"},"id":"67039425729","timestamp":1740628070856}
+25-02-27.12:03:15.270 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  SendAwardConsumer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":101,"awardTitle":"随机积分","userId":"huling"},"id":"32380735428","timestamp":1740628069465}
+25-02-27.12:03:15.271 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  SendAwardConsumer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":101,"awardTitle":"随机积分","userId":"huling"},"id":"56814957741","timestamp":1740628070339}
+25-02-27.12:04:03.337 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-02-27.12:04:03.340 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-02-27.12:04:03.759 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-02-27.12:04:04.029 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-02-27.12:04:04.032 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+25-02-27.12:04:04.033 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+25-02-27.12:04:54.353 [main            ] INFO  AwardServiceTest       - Starting AwardServiceTest using Java 17.0.2 on BestHul with PID 12784 (started by 34404 in D:\Learning\bugstack\big-market-huling\big-market-huling-app)
+25-02-27.12:04:54.354 [main            ] INFO  AwardServiceTest       - The following 1 profile is active: "dev"
+25-02-27.12:04:55.247 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-02-27.12:04:55.250 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-02-27.12:04:55.314 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 43 ms. Found 0 Redis repository interfaces.
+25-02-27.12:04:56.481 [main            ] INFO  Version                - Redisson 3.23.4
+25-02-27.12:04:56.787 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-02-27.12:04:56.803 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-02-27.12:04:59.600 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-02-27.12:04:59.714 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+25-02-27.12:04:59.774 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#6cb662e8:0/SimpleConnection@54f62ac6 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 12565]
+25-02-27.12:04:59.852 [main            ] INFO  AwardServiceTest       - Started AwardServiceTest in 5.816 seconds (JVM running for 6.352)
+25-02-27.12:05:00.079 [pool-3-thread-2 ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-02-27.12:05:00.079 [pool-3-thread-1 ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-02-27.12:05:00.331 [pool-3-thread-1 ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-02-27.12:05:00.331 [pool-3-thread-2 ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-02-27.12:05:00.629 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":101,"awardTitle":"随机积分","userId":"huling"},"id":"33179402911","timestamp":1740629100367}
+25-02-27.12:05:00.655 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  SendAwardConsumer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":101,"awardTitle":"随机积分","userId":"huling"},"id":"33179402911","timestamp":1740629100367}
+25-02-27.12:05:01.216 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":101,"awardTitle":"随机积分","userId":"huling"},"id":"74670033630","timestamp":1740629101194}
+25-02-27.12:05:01.218 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  SendAwardConsumer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":101,"awardTitle":"随机积分","userId":"huling"},"id":"74670033630","timestamp":1740629101194}
+25-02-27.12:05:01.730 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":101,"awardTitle":"随机积分","userId":"huling"},"id":"53708162233","timestamp":1740629101724}
+25-02-27.12:05:01.732 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  SendAwardConsumer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":101,"awardTitle":"随机积分","userId":"huling"},"id":"53708162233","timestamp":1740629101724}
+25-02-27.12:05:51.457 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-02-27.12:05:51.459 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-02-27.12:05:52.211 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-02-27.12:05:52.329 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-02-27.12:05:52.331 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+25-02-27.12:05:52.332 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped

@@ -7,6 +7,7 @@ import com.huling.domain.strategy.model.vo.StrategyAwardRuleModelVO;
 import com.huling.domain.strategy.model.vo.StrategyAwardStockKeyVO;
 import com.huling.domain.strategy.service.AbstractRaffleStrategy;
 import com.huling.domain.strategy.service.IRaffleAward;
+import com.huling.domain.strategy.service.IRaffleRule;
 import com.huling.domain.strategy.service.IRaffleStock;
 import com.huling.domain.strategy.service.rule.chain.ILogicChain;
 import com.huling.domain.strategy.service.rule.chain.factory.DefaultChainFactory;
@@ -17,10 +18,11 @@ import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import java.util.List;
+import java.util.Map;
 
 @Slf4j
 @Service
-public class DefaultRaffleStrategy extends AbstractRaffleStrategy implements IRaffleStock, IRaffleAward {
+public class DefaultRaffleStrategy extends AbstractRaffleStrategy implements IRaffleStock, IRaffleAward, IRaffleRule {
 
     @Resource
     private DefaultChainFactory chainFactory;
@@ -41,7 +43,7 @@ public class DefaultRaffleStrategy extends AbstractRaffleStrategy implements IRa
 
     @Override
     public DefaultTreeFactory.StrategyAwardVO raffleLogicTree(String userId, Long strategyId, Long awardId) {
-        // 查询奖品规则模型 tree_lock
+        // 查询奖品规则模型 tree_lock_1
         StrategyAwardRuleModelVO strategyAwardRuleModelVO = repository.queryStrategyAwardRuleModelVO(strategyId, awardId);
         if (strategyAwardRuleModelVO == null) {
             return DefaultTreeFactory.StrategyAwardVO.builder().awardId(awardId).build();
@@ -69,5 +71,16 @@ public class DefaultRaffleStrategy extends AbstractRaffleStrategy implements IRa
     @Override
     public List<StrategyAwardEntity> queryRaffleStrategyAwardList(Long strategyId) {
         return repository.queryStrategyAwardList(strategyId);
+    }
+
+    @Override
+    public List<StrategyAwardEntity> queryRaffleStrategyAwardListByActivityId(Long activityId) {
+        Long strategyId = repository.queryStrategyIdByActivityId(activityId);
+        return queryRaffleStrategyAwardList(strategyId);
+    }
+
+    @Override
+    public Map<String, Integer> queryAwardRuleLockCount(String[] treeIds) {
+        return repository.queryAwardRuleLockCount(treeIds);
     }
 }

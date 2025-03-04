@@ -18,7 +18,7 @@
     </resultMap>
 
     <select id="queryStrategyAwardListByStrategyId" parameterType="java.lang.Long" resultMap="dataMap">
-        select strategy_id, award_id, award_count, award_title, award_subtitle,  award_count_surplus, award_rate, sort
+        select strategy_id, award_id, award_count, award_title, award_subtitle,  award_count_surplus, award_rate, sort, rule_models
         from strategy_award
         where strategy_id = #{strategy_id}
     </select>

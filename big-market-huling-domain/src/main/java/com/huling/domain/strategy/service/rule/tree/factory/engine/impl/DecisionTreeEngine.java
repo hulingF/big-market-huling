@@ -24,7 +24,6 @@ public class DecisionTreeEngine implements IDecisionTreeEngine {
 
     @Override
     public DefaultTreeFactory.StrategyAwardVO process(String userId, Long strategyId, Long awardId) {
-
         // 1.获取决策树基本信息
         String currentNode = ruleTreeVO.getTreeRootRuleNode();
         Map<String, RuleTreeNodeVO> treeNodeMap = ruleTreeVO.getTreeNodeMap();
