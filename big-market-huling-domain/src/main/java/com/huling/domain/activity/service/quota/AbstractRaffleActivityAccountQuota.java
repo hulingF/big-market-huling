@@ -39,9 +39,9 @@ public abstract class AbstractRaffleActivityAccountQuota extends RaffleActivityA
         // 2.3 查询次数信息（用户在活动上可参与的次数）
         ActivityCountEntity activityCountEntity = queryRaffleActivityCountByActivityCountId(activitySkuEntity.getActivityCountId());
 
-        // 3. 活动动作规则校验 Todo 后续处理规则过滤流程，暂时也不处理责任链结果
+        // 3. 活动动作规则校验
         IActionChain actionChain = openActionChain();
-        boolean success = actionChain.action(activitySkuEntity, activityEntity, activityCountEntity);
+        actionChain.action(activitySkuEntity, activityEntity, activityCountEntity);
 
         // 4. 构建订单聚合对象
         CreateOrderAggregate createOrderAggregate = buildOrderAggregate(skuRechargeEntity, activitySkuEntity, activityEntity, activityCountEntity);

@@ -323,7 +323,7 @@ public class ActivityRepository implements IActivityRepository {
             dbRouter.doRouter(userId);
             transactionTemplate.execute(status -> {
                 try {
-                    // 1. 更新总账户
+                    // 1. 更新总账户，镜像月/日库存后面需要同步
                     int totalCount = raffleActivityAccountDao.updateActivityAccountSubtractionQuota(
                             RaffleActivityAccount.builder()
                                     .userId(userId)
@@ -349,6 +349,12 @@ public class ActivityRepository implements IActivityRepository {
                             log.warn("写入创建参与活动记录，更新月账户额度不足，异常 userId: {} activityId: {} month: {}", userId, activityId, activityAccountMonthEntity.getMonth());
                             throw new AppException(ResponseCode.ACCOUNT_MONTH_QUOTA_ERROR.getCode(), ResponseCode.ACCOUNT_MONTH_QUOTA_ERROR.getInfo());
                         }
+                        // 更新总账户中月镜像库存
+                        raffleActivityAccountDao.updateActivityAccountMonthSubtractionQuota(
+                                RaffleActivityAccount.builder()
+                                        .userId(userId)
+                                        .activityId(activityId)
+                                        .build());
                     } else {
                         raffleActivityAccountMonthDao.insertActivityAccountMonth(RaffleActivityAccountMonth.builder()
                                 .userId(activityAccountMonthEntity.getUserId())
@@ -357,7 +363,7 @@ public class ActivityRepository implements IActivityRepository {
                                 .monthCount(activityAccountMonthEntity.getMonthCount())
                                 .monthCountSurplus(activityAccountMonthEntity.getMonthCountSurplus() - 1)
                                 .build());
-                        // 新创建月账户，则更新总账表中月镜像额度（其实前面总库存账户更新时已经完成库存同步，这一步可以省略）
+                        // 新创建月账户，则更新总账表中月镜像额度
                         raffleActivityAccountDao.updateActivityAccountMonthSurplusImageQuota(RaffleActivityAccount.builder()
                                 .userId(userId)
                                 .activityId(activityId)
@@ -379,6 +385,12 @@ public class ActivityRepository implements IActivityRepository {
                             log.warn("写入创建参与活动记录，更新日账户额度不足，异常 userId: {} activityId: {} day: {}", userId, activityId, activityAccountDayEntity.getDay());
                             throw new AppException(ResponseCode.ACCOUNT_DAY_QUOTA_ERROR.getCode(), ResponseCode.ACCOUNT_DAY_QUOTA_ERROR.getInfo());
                         }
+                        // 更新总账户中日镜像库存
+                        raffleActivityAccountDao.updateActivityAccountDaySubtractionQuota(
+                                RaffleActivityAccount.builder()
+                                        .userId(userId)
+                                        .activityId(activityId)
+                                        .build());
                     } else {
                         raffleActivityAccountDayDao.insertActivityAccountDay(RaffleActivityAccountDay.builder()
                                 .userId(activityAccountDayEntity.getUserId())
@@ -387,7 +399,7 @@ public class ActivityRepository implements IActivityRepository {
                                 .dayCount(activityAccountDayEntity.getDayCount())
                                 .dayCountSurplus(activityAccountDayEntity.getDayCountSurplus() - 1)
                                 .build());
-                        // 新创建日账户，则更新总账表中日镜像额度（其实前面总库存账户更新时已经完成库存同步，这一步可以省略）
+                        // 新创建日账户，则更新总账表中日镜像额度
                         raffleActivityAccountDao.updateActivityAccountDaySurplusImageQuota(RaffleActivityAccount.builder()
                                 .userId(userId)
                                 .activityId(activityId)
